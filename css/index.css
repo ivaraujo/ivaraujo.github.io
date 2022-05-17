@@ -50,15 +50,13 @@ a:hover{
 .container-um{
     display: flex;
     flex-direction: row;
-    background-color: aqua;
     width: 50vw;
-    height: 400px;
 }
 
 .container-um-bio{
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 .container-um-bio-titulo{
@@ -72,8 +70,8 @@ a:hover{
     padding: 10px;
 }
 
-.container-um-bio-logo{
-    height: 20px;
+.container-um-logo{
+    height: 300px;
 }
 
 .container-dois{
