@@ -47,14 +47,13 @@ a:hover{
     display: flex;
     flex-direction: row;
     background-color: aqua;
-    height: 200px;
     width: 50vw;
 }
 
 .container-um-bio{
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 .container-um-bio-titulo{
@@ -64,7 +63,7 @@ a:hover{
 
 .container-um-bio-descricao{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
     padding: 10px;
 }
 
