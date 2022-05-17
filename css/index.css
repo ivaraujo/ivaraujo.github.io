@@ -65,4 +65,9 @@ a:hover{
 .container-um-bio-descricao{
     font-family: 'Ubuntu', sans-serif;
     font-size: 14pt;
+    padding: 10px;
+}
+
+.container-um-bio-logo{
+    height: 72px;
 }
