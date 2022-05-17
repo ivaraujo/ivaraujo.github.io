@@ -73,3 +73,16 @@ a:hover{
 .container-um-bio-logo{
     height: 20px;
 }
+
+.container-dois{
+    background-color: green;
+}
+
+.container-tres{
+
+    background-color: yellow;
+}
+
+.rodape{
+    background-color: blueviolet;
+}
