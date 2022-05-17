@@ -13,6 +13,8 @@ body{
 
 a{
     color: black;
+    font-size: 14pt;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 a:hover{
@@ -48,6 +50,7 @@ a:hover{
     flex-direction: row;
     background-color: aqua;
     width: 50vw;
+    height: 400px;
 }
 
 .container-um-bio{
@@ -68,5 +71,5 @@ a:hover{
 }
 
 .container-um-bio-logo{
-    height: 72px;
+    height: 20px;
 }
