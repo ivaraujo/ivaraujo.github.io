@@ -84,5 +84,11 @@ a:hover{
 }
 
 .rodape{
-    background-color: blueviolet;
+    padding: 32px;
+}
+
+.rodape-logo{
+    display: block;
+    margin: 0 auto;
+    height: 80px;
 }
