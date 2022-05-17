@@ -51,8 +51,18 @@ a:hover{
     width: 50vw;
 }
 
-.container-um-biografia{
+.container-um-bio{
     display: flex;
     flex-direction: column;
     padding-top: 10px;
+}
+
+.container-um-bio-titulo{
+    font-family: 'Teko', sans-serif;
+    font-size: 24pt;
+}
+
+.container-um-bio-descricao{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14pt;
 }
