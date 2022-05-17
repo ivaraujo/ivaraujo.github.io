@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2? family= Teko:wght@500 & family= Ubuntu:wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Ubuntu+Mono & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 *{ 
     margin: 0 auto;
@@ -13,8 +15,8 @@ body{
 
 a{
     color: black;
-    font-size: 14pt;
-    font-family: 'Ubuntu', sans-serif;
+    font-size: 18pt;
+    font-family: 'Teko', sans-serif;
 }
 
 a:hover{
@@ -65,7 +67,7 @@ a:hover{
 }
 
 .container-um-bio-descricao{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     font-size: 12pt;
     padding: 10px;
 }
