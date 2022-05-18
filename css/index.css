@@ -9,8 +9,8 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: white;
+body{    
+    height: 100%;
 }
 
 a{
@@ -27,8 +27,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;    
-
+    padding: 10px;
 }
 
 .cabecalho-redes{
@@ -67,7 +66,9 @@ a:hover{
 .container-um-bio-descricao{
     font-family: 'Ubuntu Mono', monospace;
     font-size: 12pt;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: justify;
 }
 
 .container-um-logo{
@@ -85,10 +86,16 @@ a:hover{
 
 .rodape{
     padding: 32px;
+    background-color: red;
 }
 
-.rodape-logo{
-    display: block;
-    margin: 0 auto;
-    height: 80px;
+.rodape-texto{
+    display: flex;
+    align-items: center;    
+    height: 40px;
 }
+ .rodape-texto-copyright{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 10pt;
+    padding: 10px;
+ }
