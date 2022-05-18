@@ -54,7 +54,7 @@ a:hover{
     justify-content: center;
     height: 700px;
     width: 100%;
-    background-color: black;
+
 }
 
 .container-um-bio{
@@ -62,7 +62,6 @@ a:hover{
     flex-direction: column;
     width: 50vw;
     padding-top: 150px;
-    color: white;
 }
 
 .container-um-bio-titulo{
