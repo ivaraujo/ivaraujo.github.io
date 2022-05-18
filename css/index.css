@@ -111,6 +111,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     text-align: justify;
+    padding-bottom: 10px;
 }
 
 .container-tres-contato-form-texto-campos{
@@ -123,8 +124,22 @@ a:hover{
     }
 
 #nome, #assunto, #email, #mensagem{
-    width: 350px;
-    padding: 10px;
+    width: 450px;
+    padding: 20px;
+}
+
+#botao{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 14pt;
+    
 }
 
 .container-tres-contato-form-titulo{
