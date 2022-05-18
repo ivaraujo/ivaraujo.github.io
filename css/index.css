@@ -76,17 +76,40 @@ a:hover{
 }
 
 .container-dois{
-    background-color: green;
+    display: flex;
+    height: 300px;
+}
+
+.container-dois-titulo{
+    display: flex;
+    align-items: center;
+    width: 20vw;
+}
+
+.container-dois-proj{
+    border: 1px solid rgba(0, 0, 0, 0.473);
 }
 
 .container-tres{
+    display: flex;
+    background-color: red;
+}
 
-    background-color: yellow;
+.container-tres-contato{
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.container-dois-titulo-texto{
+    font-family: 'Teko', sans-serif;
+    font-size: 40pt;
 }
 
 .rodape{
     padding: 32px;
-    background-color: red;
 }
 
 .rodape-texto{
