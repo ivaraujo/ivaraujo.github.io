@@ -77,7 +77,6 @@ a:hover{
 
 .container-dois{
     display: flex;
-    height: 300px;
 }
 
 .container-dois-titulo{
@@ -90,35 +89,79 @@ a:hover{
     border: 1px solid rgba(0, 0, 0, 0.473);
 }
 
-.container-tres{
-    display: flex;
-    background-color: red;
-}
-
-.container-tres-contato{
-    display: flex;
-    align-items: center;
-    width: 30vw;
-    height: 300px;
-    border: 1px solid black;
-}
-
 .container-dois-titulo-texto{
     font-family: 'Teko', sans-serif;
     font-size: 40pt;
 }
 
+.container-tres{
+    display: flex;
+    background-color: black;
+    width: 100%;
+}
+
+.container-tres-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.container-tres-contato-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.container-tres-contato-form-texto-campos{
+    border-radius: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    }
+
+#nome, #assunto, #email, #mensagem{
+    width: 350px;
+    padding: 10px;
+}
+
+.container-tres-contato-form-titulo{
+    display: flex;
+    font-family: 'Teko', sans-serif;
+    font-size: 40pt;
+}
+
+.container-tres-contato-form-texto{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 12pt;
+}
+
+.container-tres-contato-dados{
+    font-family: 'Teko', sans-serif;
+    font-size: 18pt;
+}
+
 .rodape{
-    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape-botoes{
+    display: flex;
+    flex-direction: column;
 }
 
 .rodape-texto{
     display: flex;
-    align-items: center;    
-    height: 40px;
 }
+
  .rodape-texto-copyright{
     font-family: 'Ubuntu Mono', monospace;
     font-size: 10pt;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
  }
