@@ -129,7 +129,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 .container-tres-contato-form-texto-campos{
