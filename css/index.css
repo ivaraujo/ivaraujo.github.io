@@ -54,6 +54,9 @@ a:hover{
     justify-content: center;
     height: 700px;
     width: 100%;
+    background: url(../img/cod_binario.png);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
 }
 
@@ -66,12 +69,12 @@ a:hover{
 
 .container-um-bio-titulo{
     font-family: 'Teko', sans-serif;
-    font-size: 24pt;
+    font-size: 38pt;    
 }
 
 .container-um-bio-descricao{
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 12pt;
+    font-size: 14pt;
     padding-top: 10px;
     padding-left: 20px;
     text-align: justify;
