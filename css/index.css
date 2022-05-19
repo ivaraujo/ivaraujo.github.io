@@ -95,6 +95,11 @@ a:hover{
     border: 1px solid rgba(0, 0, 0, 0.473);    
     margin-top:10px;
     margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.container-dois-proj-img{
+    width: 15vw;
 }
 
 .container-dois-titulo-texto{
@@ -178,10 +183,16 @@ a:hover{
 .rodape-botoes{
     display: flex;
     flex-direction: column;
+    padding: 30px;
+}
+
+.rodape-logo{
+    height: 100px;
 }
 
 .rodape-texto{
     display: flex;
+    width: 300px;
 }
 
  .rodape-texto-copyright{
