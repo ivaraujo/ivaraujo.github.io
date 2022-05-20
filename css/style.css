@@ -93,6 +93,7 @@ a:hover{
     flex-direction: column;
     background-color: black;
     width: 100%;
+    height: 400px;
 }
 
 .container-dois-titulo{
@@ -106,6 +107,7 @@ a:hover{
 .container-tres{
     display: flex;
     width: 100%;
+    height: 400px;
 }
 
 .container-tres-titulo{
@@ -117,7 +119,10 @@ a:hover{
     border: 1px solid rgba(0, 0, 0, 0.473);    
     margin-top:10px;
     margin-bottom: 10px;
-    border-radius: 50%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-tres-proj-img{
@@ -153,22 +158,32 @@ a:hover{
     padding: 10px;
 }
 
-.container-quatro-contato-form-texto-campos{
-    border-radius: 3%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.container-quatro-contato-form-campos-texto{
+    max-width: 500px;
     padding: 10px;
-    }
+}
 
-#nome, #assunto, #email, #mensagem{
-    width: 450px;
-    padding: 20px;
+#nome, #assunto, #email{
+    width: 100%;
+    height: 35px;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#mensagem{
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+label{    
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14pt;
 }
 
 #botao{
-    width: 200px;
+    width: 60%;
     height: 30px;
     display: flex;
     align-items: center;
@@ -178,7 +193,7 @@ a:hover{
     border-radius: 10px;
     font-family: 'Teko', sans-serif;
     font-size: 14pt;
-    
+    cursor: pointer;
 }
 
 #botao:hover{
