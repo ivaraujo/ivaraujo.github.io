@@ -2,27 +2,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
-*{ 
-    margin: 0 auto;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
 :root{
     --titulo: 'Teko', sans-serif;
     --texto: 'Ubuntu Mono', monospace;
     --padrao: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
-    
+*{ 
+    margin: 0px auto;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{    
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 body{    
     height: 100%;
-    
+    font-family: var(--padrao);    
 }
 
 a{
@@ -30,7 +29,6 @@ a{
     font-size: 18pt;
     font-family: var(--titulo);
 }
-
 
 a:hover{
     color: rgb(241, 241, 12);
@@ -48,7 +46,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: 0px;
+    height: 50px;
 }
 
 .cabecalho-redes{
@@ -66,7 +65,6 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*background-color: greenyellow;    */
 }
 
 /* CONTAINER UM */
@@ -76,9 +74,8 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 700px;
     width: 100%;
-    /*background: url(../img/cod_binario.png);*/
+    background: url(../img/cod_binario.png);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px;
 }
@@ -101,8 +98,8 @@ nav{
     text-align: justify;
 }
 
-.container-um-logo{
-    height: 100%;
+#container-um-logo{
+    width: 50%;
 }
 
 /* CONTAINER DOIS */
@@ -110,17 +107,16 @@ nav{
 .container-dois{
     display: flex;
     flex-direction: column;
-   /* background-color: rgba(192, 192, 192, 0.235);*/
+    background-color: #6A6A6A; 
     width: 100%;
-    height: 400px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px;
+    color: white;
 }
 
 .container-dois-titulo{
     font-size: 40pt;
-    color:black;
 }
 
 /* CONTAINER TRES */
@@ -128,8 +124,8 @@ nav{
 .container-tres{
     display: flex;
     width: 100%;
-    height: 400px;
-    padding: 10px;
+    padding: 10px;    ;
+    
 }
 
 .container-tres-titulo{
@@ -159,17 +155,17 @@ nav{
 
 .container-quatro{
     display: flex;
-   /* background-color: rgba(192, 192, 192, 0.235);*/
+    background-color: #6A6A6A;
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px;
+    color: white;
 }
 
 .container-quatro-contato{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
 }
 .container-quatro-contato-form{
     display: flex;
@@ -206,7 +202,7 @@ label{
 }
 
 #botao{
-    width: 60%;
+    width: 100%;
     height: 30px;
     display: flex;
     align-items: center;
@@ -214,14 +210,14 @@ label{
     background-color: black;
     color:  white;
     border-radius: 10px;
-    font-family: 'Teko', sans-serif;
+    font-family: var(--titulo);
     font-size: 14pt;
     cursor: pointer;
 }
 
 #botao:hover{
-    background-color: rgba(0, 0, 0, 0.800);
-    color:rgb(241, 241, 12);
+    background-color: rgb(241, 241, 12);
+    color:black;
 }
 
 .container-quatro-contato-form-titulo{
@@ -242,6 +238,17 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #6A6A6A;
+    color: white;
+}
+
+footer > div > h3{
+    font-size: 30px;
+    color: rgb(241, 241, 12);
+}
+
+footer > div > a{
+    color: white;
 }
 
 .rodape-botoes{
@@ -257,11 +264,8 @@ footer{
 .rodape-texto{
     display: flex;
     width: 300px;
-}
-
- .rodape-texto-copyright{
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: var(--texto);
     font-size: 10pt;
     align-items: center;
     justify-content: center;
- }
+}
