@@ -9,25 +9,30 @@
 }
 
 *{ 
-    margin: 0px auto;
+    margin: 0px;
     padding: 0px;
     text-decoration: none;
     box-sizing: border-box;
 }
 
-header{    
+/* CONF GERAIS */
+
+header{ 
+    display: inline-block;   
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;    
 }
 
 body{    
-    height: 100%;
+    width: 100vw;
     font-family: var(--padrao);    
 }
 
 a{
     color: black;
-    font-size: 18pt;
+    font-size: 1.5em;
     font-family: var(--titulo);
+    padding: 10px;
 }
 
 a:hover{
@@ -42,38 +47,29 @@ p{
     font-family: var(--texto);
 }
 
+/* HEDEAR */
+
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0px;
-    height: 50px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
 }
 
 .cabecalho-redes{
-    display: flex;
-    gap: 15px;
+    background-color: green;
 }
 
 .cabecalho-botoes{
-    display: flex;
-    gap: 20px;
+    background-color: yellow;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 /* CONTAINER UM */
 
+main{
+
+}
 .container-um{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     background: url(../img/cod_binario.png);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -81,8 +77,6 @@ nav{
 }
 
 .container-um-bio{
-    display: flex;
-    flex-direction: column;
     width: 50vw;
     padding-top: 150px;
 }
@@ -105,8 +99,6 @@ nav{
 /* CONTAINER DOIS */
 
 .container-dois{
-    display: flex;
-    flex-direction: column;
     background-color: #6A6A6A; 
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -122,15 +114,12 @@ nav{
 /* CONTAINER TRES */
 
 .container-tres{
-    display: flex;
     width: 100%;
     padding: 10px;    ;
     
 }
 
 .container-tres-titulo{
-    display: flex;
-    align-items: center;
 }
 
 .container-tres-proj{
@@ -138,9 +127,6 @@ nav{
     margin-top:10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .container-tres-proj-img{
@@ -154,7 +140,6 @@ nav{
 /* CONTAINER QUATRO */
 
 .container-quatro{
-    display: flex;
     background-color: #6A6A6A;
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -163,15 +148,8 @@ nav{
 }
 
 .container-quatro-contato{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .container-quatro-contato-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
     padding: 10px;
 }
 
@@ -221,7 +199,6 @@ label{
 }
 
 .container-quatro-contato-form-titulo{
-    display: flex;
     font-size: 40pt;
 }
 
@@ -234,10 +211,6 @@ label{
 
 footer{
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: #6A6A6A;
     color: white;
 }
@@ -251,21 +224,12 @@ footer > div > a{
     color: white;
 }
 
-.rodape-botoes{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-
-.rodape-logo{
-    height: 100px;
-}
-
-.rodape-texto{
-    display: flex;
+footer > div > p{
     width: 300px;
     font-family: var(--texto);
     font-size: 10pt;
-    align-items: center;
-    justify-content: center;
+}
+
+#rodape-botoes{
+    padding: 30px;
 }
