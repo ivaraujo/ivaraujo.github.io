@@ -18,9 +18,8 @@
 /* CONF GERAIS */
 
 body{    
-    width: 99vw;
+    width: 100vw;
     font-family: var(--padrao);
-    /*    */
 }
 
 a{
@@ -43,7 +42,7 @@ p{
     font-family: var(--texto);
 }
 
-/* HEDEAR */
+/* CONTAINER HEDEAR */
 
 header{
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -56,7 +55,7 @@ nav{
     justify-content: space-around;
 }
 
-/* CONTEUDO */
+/* BASE DO CORPO */
 
 main{
     max-width: 100vw;
@@ -64,53 +63,55 @@ main{
 
 section{
     margin: auto;
-    background-color: white;
+    /*background-color: #000dff;*/
 }
 
 
-/* CONTAINER UM */
+/* CONTAINER ABOUT */
 
-main > #titulo{
+main > #topo{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    box-shadow: 10px 10px 10px black;
+    background-image: linear-gradient(white,#787878);
 }
 
-main > #titulo > img{
-    width: 300px;
+main > #topo > img{
+    max-width: 500px;
 }
 
-/* CONTAINER DOIS */
+/* CONTAINER ABOUT */
 
-main > #skills{
-    background-color: #6A6A6A; 
+main > #about{
+    /*background-color: #787878; */
+    background-image: linear-gradient(#787878,white);
     width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     color: white;
-    height: 300px;
-    box-shadow: 0px 5px 10px black;
+    height: 700px;
 }
 
-main > #skills > h2{
+main > #about > h2{
     text-align: center;
 }
 
-main > #tecnology{
+/* CONTAINER SKILLS */
+
+main > #skills{
     text-align: center;
     background: url(../img/cod_binario.png);
     height: 300px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     
 }
-/* CONTAINER TRES */
+/* CONTAINER PORTIFOLIO */
 
 main > #portifolio{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #6A6A6A;
+    background-image: linear-gradient(white,#787878);
     color: white;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -132,11 +133,10 @@ main > #portifolio > img:hover{
     border-radius: 5px;
 }
 
-/* CONTAINER QUATRO */
+/* CONTAINER CONTACT */
 
 main > #contact{
-    background-color: #6A6A6A;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #787878;
     padding: 10px;
     color: white;
     padding-bottom: 30px;
@@ -146,58 +146,64 @@ main > #contact > h2{
     text-align: center;
 }
 
-main > #contact > form{
-    display: flex;
-    flex-direction: column;
-    max-width: 30vw;
+main > #contact > #contact-formulario{
+    max-width: 800px;
     margin: auto;
 }
 
+main > #contact > #contact-formulario > form{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
 
-main > #contact > form > input{
-    max-width: 800px; 
-    padding: 10px;
-    font-family: var(--texto);    
+main > #contact > #contact-formulario > form > input{
+    width: 100%;
+    height: 30px; 
+    font-family: var(--texto);
+    font-size: 1em;    
     border: 1px solid black; 
     border-radius: 5px;
-    
+    margin-bottom: 10px;  
 }
-main > #contact > form > textarea{ 
-    max-width: 800px;  
+main > #contact > #contact-formulario > form > textarea{
+    width: 100%; 
     font-family: var(--texto);
     font-size: 14pt;
     border: 1px solid black; 
     border-radius: 5px;
-    padding: 10px;
+    margin-bottom: 10px;
 }
 
-main > #contact > form > #contact-botao{
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
+main > #contact > #contact-formulario > form > #contact-botao{
+    
+   /* text-align: center;*/
 }
 
-main > #contact > form > #contact-botao > #enviar{ 
-    width: 30vw;
+main > #contact > #contact-formulario > form > #contact-botao > #enviar{ 
+    width: 30%;
     font-family: var(--titulo);
     font-size: 1.5em;
     background-color: black;
     color:  white;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-main > #contact > form > .contact-botao > #enviar:hover{
+main > #contact > #contact-formulario > form > #contact-botao > #enviar:hover{
     background-color: rgb(241, 241, 12);
     color:black;
 }
 
-/* RODAPE */
+/* CONTAINER FOOTER */
 
 footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: #6A6A6A;
+    background-color: #787878;
     color: white;
 }
 
