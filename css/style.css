@@ -116,7 +116,7 @@ main > #about{
 main > #about > img{
     max-width: 500px;
     border: transparent;
-    border-radius: 90%;
+    border-radius: 40%;
 }
 
 main > #about > #about-texto{
