@@ -207,22 +207,23 @@ main > #portifolio > #portifolio-img > img:hover{
 /* CONTAINER CONTACT */
 
 main > #contact{
-    height: 700px;
     background-image: linear-gradient(#B8B8B8,black);
     border-bottom: 2px solid rgba(54, 54, 54, 0.883);
-}
-
-main > #contact > article > h2{
-    text-align: center;
 }
 
 main > #contact > article {
     background-image: url(../img/cod_binario.png);
 }
 
+main > #contact > article > h2{
+    text-align: center;
+    padding-top: 50px;
+}
+
 main > #contact > article >  #contact-formulario{
     max-width: 800px;
     margin: auto;
+    background-color: rgba(128, 128, 128, 0.13);
 }
 
 main > #contact > article > #contact-formulario > form{
@@ -230,8 +231,9 @@ main > #contact > article > #contact-formulario > form{
     padding: 50px;
 }
 
-main > #contact > article >  #contact-formulario > form > label{
+main > #contact > article > #contact-formulario > form > p > label{
     color: white;
+    padding-bottom: 20px;
 }
 
 main > #contact > article >  #contact-formulario > form > input{
@@ -278,35 +280,46 @@ main > #contact > article >  #contact-formulario > form > #contact-botao > #envi
 
 footer{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     border-top: 2px solid rgba(0, 0, 0, 0.2);
     background-color: black;
     color: #B8B8B8;
 }
 
-footer > div > h3{
+footer > article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > article > #rodape-botoes{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+footer > article > #rodape-botoes > h3{
     font-size: 30px;
     color: rgb(241, 241, 12);
 }
 
-footer > div > a{    
+footer > article > #rodape-botoes > a{    
     color: #B8B8B8;
 }
 
-footer > div > a:hover{    
+footer > article > #rodape-botoes > a:hover{    
     border-bottom: 1px solid rgb(241, 241, 12);
     border-radius: 10px;
 }
 
-footer > div > p{
+footer > article > #rodape-botoes > p{
     width: 300px;
     font-family: var(--texto);
     font-size: 10pt;
 }
 
-#rodape-botoes{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+footer > #rodape-texto{
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
 }
