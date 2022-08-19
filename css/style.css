@@ -70,11 +70,15 @@ section{
 
 /* CONTAINER ABOUT */
 
-main > #topo{ 
+main > #topo{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 100px;     
     height: 700px;   
-    background: url(../img/cod_binario.png);
+    background: url(../img/ivan_topo.jpg);
     border-bottom: 10px solid rgba(0, 0, 0, 0.733);
-    text-align: center;    
+        
 }
 
 main > #topo > img{
