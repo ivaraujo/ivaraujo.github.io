@@ -55,6 +55,7 @@ nav{
     justify-content: space-around;
 }
 
+
 /* BASE DO CORPO */
 
 main{
@@ -90,7 +91,6 @@ main > #about{
     align-items: center;
     background-image: linear-gradient(#787878,white);
     width: 100%;
-    color: white;
 }
 
 main > #about > #about-texto{
@@ -100,6 +100,7 @@ main > #about > #about-texto{
 }
 
 main > #about > #about-texto > h2{
+    color: red;
     font-size: 3em;
 }
 
@@ -179,6 +180,10 @@ main > #contact > #contact-formulario > form{
     padding: 20px;
 }
 
+main > #contact > #contact-formulario > form > label{
+    color: white;
+}
+
 main > #contact > #contact-formulario > form > input{
     width: 100%;
     height: 30px; 
@@ -209,16 +214,16 @@ main > #contact > #contact-formulario > form > #contact-botao > #enviar{
     width: 30%;
     font-family: var(--titulo);
     font-size: 1.5em;
-    background-color: black;
-    color:  white;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgb(241, 241, 12);
+    color:  black;
+    border: transparent;
     border-radius: 10px;
     cursor: pointer;
 }
 
 main > #contact > #contact-formulario > form > #contact-botao > #enviar:hover{
-    background-color: rgb(241, 241, 12);
-    color:black;
+    color:white;
+    box-shadow: 0px 0px 10px white;
 }
 
 /* CONTAINER FOOTER */
@@ -239,6 +244,11 @@ footer > div > h3{
 
 footer > div > a{    
     color: white;
+}
+
+footer > div > a:hover{    
+    border-bottom: 1px solid rgb(241, 241, 12);
+    border-radius: 10px;
 }
 
 footer > div > p{
