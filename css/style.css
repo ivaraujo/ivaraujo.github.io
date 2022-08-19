@@ -318,6 +318,12 @@ footer > article > #rodape-botoes > p{
     font-size: 10pt;
 }
 
+footer > article > #rodape-logo > img{
+    max-width: 200px;
+    border: transparent;
+    border-radius: 50%;
+}
+
 footer > #rodape-texto{
     height: 50px;
     text-align: center;
