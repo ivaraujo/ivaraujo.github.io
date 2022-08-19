@@ -68,7 +68,6 @@ main{
 
 section{
     margin: auto;
-    /*background-color: #000dff;*/
 }
 
 
@@ -113,8 +112,8 @@ main > #about{
 }
 
 main > #about > img{
-    max-width: 350px;
-    border: 20px dashed gray;
+    max-width: 400px;
+    border: 10px dashed gray;
     border-radius: 50%;
 }
 
@@ -156,7 +155,7 @@ main > #about > #about-texto-dois > h2{
 main > #skills{
     height: 300px;
     text-align: center;    
-    border-bottom: 2px initial rgb(0, 0, 0, 0.733);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 main > #skills > h2{
@@ -173,28 +172,29 @@ main > #skills > a > img{
 /* CONTAINER PORTIFOLIO */
 
 main > #portifolio{
-    height: 700px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-image: linear-gradient(white,#B8B8B8);
     padding-bottom: 100px;
     padding-top: 100px;
+    border-bottom: 2px solid rgba(114, 113, 113, 0.883);
 }
 
 main > #portifolio > h2{
     max-width: 300px;
     text-align: left;
-    padding-right: 30px;
+    padding: 30px;
 }
 
 main > #portifolio > #portifolio-img{
+    display: flex;
     max-width: 800px ;
+    
 }
 
 main > #portifolio > #portifolio-img > img{
     max-width: 200px;
-    height: 300px;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
@@ -211,6 +211,7 @@ main > #contact{
     background-image: linear-gradient(#B8B8B8,black);
     padding: 10px;
     padding-bottom: 30px;
+    border-bottom: 2px solid rgba(54, 54, 54, 0.883);
 }
 
 main > #contact > h2{
@@ -281,7 +282,7 @@ footer{
     align-items: center;
     border-top: 2px solid rgba(0, 0, 0, 0.2);
     background-color: black;
-    color: white;
+    color: #B8B8B8;
 }
 
 footer > div > h3{
@@ -290,7 +291,7 @@ footer > div > h3{
 }
 
 footer > div > a{    
-    color: white;
+    color: #B8B8B8;
 }
 
 footer > div > a:hover{    
