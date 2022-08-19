@@ -72,7 +72,7 @@ section{
 }
 
 
-/* CONTAINER ABOUT */
+/* CONTAINER TOPO */
 
 main > #topo{    
     padding-bottom: 100px;     
@@ -83,23 +83,20 @@ main > #topo{
     background-attachment: fixed;
     background-size: cover;
     border-bottom: 10px solid rgba(0, 0, 0, 0.733);    
-    color: white;
-    text-align: center;    
+    color: white;   
 }
 
-main > #topo > h1{
-    padding-top: 500px;
-    padding-bottom: 10px;
+main > #topo > #topo-titulo{
+    text-align: center;
+    padding: 500px;
+}
+
+main > #topo > #topo-titulo > h1{
     font-size: 3em;
 }
 
-main > #topo > p{
+main > #topo > #topo-titulo >  p{
     font-size: 1.5em;
-}
-
-main > #topo > img{
-    max-width: 500px;
-    margin: auto;
 }
 
 /* CONTAINER ABOUT */
@@ -107,25 +104,50 @@ main > #topo > img{
 main > #about{
     height: 700px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-image: linear-gradient(#787878,white);
     width: 100%;
 }
 
 main > #about > img{
-    max-width: 500px;
-    border: transparent;
-    border-radius: 40%;
+    max-width: 350px;
+    border: 20px dashed gray;
+    border-radius: 50%;
 }
 
-main > #about > #about-texto{
-    max-width: 500px;
+main > #about > #about-texto-um{
+    max-width: 600px;
+    text-align: justify;
+    font-size: 1em;
+    padding-right: 200px;
+}
+
+main > #about > #about-texto-um > h2{
+    color: rgb(241, 241, 12);
+    text-shadow: 0px 0px 10px black;
+    padding-bottom: 20px;
+}
+
+main > #about > #about-texto-um > p > strong{
+    color: red;
+}
+
+
+
+main > #about > #about-texto-dois > h2{
+    color: black;
+    font-size: 1em;
+}
+
+main > #about > #about-texto-dois{
+    max-width: 600px;
     text-align: justify;
     font-size: 1.5em;
+    padding-left: 200px;
 }
 
-main > #about > #about-texto > h2{
+main > #about > #about-texto-dois > h2{
     color: red;
     font-size: 3em;
 }
