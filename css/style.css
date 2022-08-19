@@ -209,56 +209,56 @@ main > #portifolio > #portifolio-img > img:hover{
 main > #contact{
     height: 700px;
     background-image: linear-gradient(#B8B8B8,black);
-    padding: 10px;
-    padding-bottom: 30px;
     border-bottom: 2px solid rgba(54, 54, 54, 0.883);
 }
 
-main > #contact > h2{
+main > #contact > article > h2{
     text-align: center;
 }
 
-main > #contact > #contact-formulario{
+main > #contact > article {
+    background-image: url(../img/cod_binario.png);
+}
+
+main > #contact > article >  #contact-formulario{
     max-width: 800px;
     margin: auto;
 }
 
-main > #contact > #contact-formulario > form{
+main > #contact > article > #contact-formulario > form{
     width: 100%;
-    padding: 20px;
+    padding: 50px;
 }
 
-main > #contact > #contact-formulario > form > label{
+main > #contact > article >  #contact-formulario > form > label{
     color: white;
 }
 
-main > #contact > #contact-formulario > form > input{
+main > #contact > article >  #contact-formulario > form > input{
     width: 100%;
     height: 30px; 
     font-family: var(--texto);
     font-size: 1em;    
     border: 1px solid black; 
     border-radius: 5px;
-    margin-bottom: 10px;
     padding-left: 10px;  
 }
-main > #contact > #contact-formulario > form > textarea{
+main > #contact > article >  #contact-formulario > form > textarea{
     width: 100%; 
     font-family: var(--texto);
     font-size: 14pt;
     border: 1px solid black; 
     border-radius: 5px;
-    margin-bottom: 10px;
     padding-left: 10px; 
     padding-top: 5px;
 }
 
-main > #contact > #contact-formulario > form > #contact-botao{
+main > #contact > article >  #contact-formulario > form > #contact-botao{
     
    text-align: center;
 }
 
-main > #contact > #contact-formulario > form > #contact-botao > #enviar{ 
+main > #contact > article >  #contact-formulario > form > #contact-botao > #enviar{ 
     width: 30%;
     font-family: var(--titulo);
     font-size: 1.5em;
@@ -269,7 +269,7 @@ main > #contact > #contact-formulario > form > #contact-botao > #enviar{
     cursor: pointer;
 }
 
-main > #contact > #contact-formulario > form > #contact-botao > #enviar:hover{
+main > #contact > article >  #contact-formulario > form > #contact-botao > #enviar:hover{
     color:white;
     box-shadow: 0px 0px 10px white;
 }
