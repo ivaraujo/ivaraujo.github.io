@@ -74,7 +74,10 @@ section{
 
 /* CONTAINER TOPO */
 
-main > #topo{    
+main > #topo{ 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;   
     padding-bottom: 100px;     
     height: 700px;   
     background: url(../img/ivan_topo.jpg);
@@ -88,7 +91,6 @@ main > #topo{
 
 main > #topo > #topo-titulo{
     text-align: center;
-    padding: 500px;
 }
 
 main > #topo > #topo-titulo > h1{
@@ -104,7 +106,7 @@ main > #topo > #topo-titulo >  p{
 main > #about{
     height: 700px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-image: linear-gradient(#787878,white);
     width: 100%;
@@ -117,10 +119,9 @@ main > #about > img{
 }
 
 main > #about > #about-texto-um{
-    max-width: 600px;
+    max-width: 350px;
     text-align: justify;
     font-size: 1em;
-    padding-right: 200px;
 }
 
 main > #about > #about-texto-um > h2{
@@ -133,18 +134,15 @@ main > #about > #about-texto-um > p > strong{
     color: red;
 }
 
-
-
 main > #about > #about-texto-dois > h2{
     color: black;
     font-size: 1em;
 }
 
 main > #about > #about-texto-dois{
-    max-width: 600px;
+    max-width: 350px;
     text-align: justify;
     font-size: 1.5em;
-    padding-left: 200px;
 }
 
 main > #about > #about-texto-dois > h2{
