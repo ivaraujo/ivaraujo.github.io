@@ -1,0 +1,21 @@
+<a href="https://www.flaticon.com/br/icones-gratis/html-5" title="html 5 ícones">Html 5 ícones criados por Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/br/icones-gratis/css-3" title="css 3 ícones">Css 3 ícones criados por Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/br/icones-gratis/javascript" title="javascript ícones">Javascript ícones criados por Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/br/icones-gratis/php" title="php ícones">Php ícones criados por Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/br/icones-gratis/mysql" title="mysql ícones">Mysql ícones criados por Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Kiranshastry - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/node-js" title="node js icons">Node js icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/c-sharp" title="c sharp icons">C sharp icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/unity" title="unity icons">Unity icons created by Freepik - Flaticon</a>

@@ -45,7 +45,7 @@ p{
 /* CONTAINER HEDEAR */
 
 header{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     background-color: white;
     padding: 10px;    
 }
@@ -69,66 +69,89 @@ section{
 
 /* CONTAINER ABOUT */
 
-main > #topo{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    background-image: linear-gradient(white,#787878);
+main > #topo{ 
+    height: 700px;   
+    background: url(../img/cod_binario.png);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.733);
+    text-align: center;    
 }
 
 main > #topo > img{
     max-width: 500px;
+    margin: auto;
 }
 
 /* CONTAINER ABOUT */
 
 main > #about{
-    /*background-color: #787878; */
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-image: linear-gradient(#787878,white);
     width: 100%;
     color: white;
-    height: 700px;
 }
 
-main > #about > h2{
-    text-align: center;
+main > #about > #about-texto{
+    max-width: 500px;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+main > #about > #about-texto > h2{
+    font-size: 3em;
 }
 
 /* CONTAINER SKILLS */
 
 main > #skills{
-    text-align: center;
-    background: url(../img/cod_binario.png);
     height: 300px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    
+    text-align: center;    
+    border-bottom: 2px initial rgb(0, 0, 0, 0.733);
 }
+
+main > #skills > h2{
+    padding-bottom: 30px;
+}
+
+main > #skills > a > img{
+
+    max-width: 130px;
+    border: transparent;
+    border-radius: 30px;
+}
+
 /* CONTAINER PORTIFOLIO */
 
 main > #portifolio{
+    height: 700px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-image: linear-gradient(white,#787878);
-    color: white;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    background-image: linear-gradient(white,#B8B8B8);
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 main > #portifolio > h2{
+    max-width: 300px;
     text-align: left;
-    padding: 10px;
+    padding-right: 30px;
 }
 
-main > #portifolio > img{
-    max-width: 300px;
-    border: 5px solid rgba(0, 0, 0, 0.2);
+main > #portifolio > #portifolio-img{
+    max-width: 800px ;
+}
+
+main > #portifolio > #portifolio-img > img{
+    max-width: 200px;
+    height: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
-main > #portifolio > img:hover{
+main > #portifolio > #portifolio-img > img:hover{
     border: 5px solid rgb(241, 241, 12);
     border-radius: 5px;
 }
@@ -136,9 +159,9 @@ main > #portifolio > img:hover{
 /* CONTAINER CONTACT */
 
 main > #contact{
-    background-color: #787878;
+    height: 700px;
+    background-image: linear-gradient(#B8B8B8,black);
     padding: 10px;
-    color: white;
     padding-bottom: 30px;
 }
 
@@ -153,7 +176,6 @@ main > #contact > #contact-formulario{
 
 main > #contact > #contact-formulario > form{
     width: 100%;
-    text-align: center;
     padding: 20px;
 }
 
@@ -164,7 +186,8 @@ main > #contact > #contact-formulario > form > input{
     font-size: 1em;    
     border: 1px solid black; 
     border-radius: 5px;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
+    padding-left: 10px;  
 }
 main > #contact > #contact-formulario > form > textarea{
     width: 100%; 
@@ -173,11 +196,13 @@ main > #contact > #contact-formulario > form > textarea{
     border: 1px solid black; 
     border-radius: 5px;
     margin-bottom: 10px;
+    padding-left: 10px; 
+    padding-top: 5px;
 }
 
 main > #contact > #contact-formulario > form > #contact-botao{
     
-   /* text-align: center;*/
+   text-align: center;
 }
 
 main > #contact > #contact-formulario > form > #contact-botao > #enviar{ 
@@ -186,7 +211,7 @@ main > #contact > #contact-formulario > form > #contact-botao > #enviar{
     font-size: 1.5em;
     background-color: black;
     color:  white;
-    border: 1px solid white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     cursor: pointer;
 }
@@ -202,8 +227,8 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: #787878;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: black;
     color: white;
 }
 
