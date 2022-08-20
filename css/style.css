@@ -81,7 +81,7 @@ main > #topo{
     height: 700px;   
     background: url(../img/ivan_topo.jpg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     border-bottom: 10px solid rgba(0, 0, 0, 0.733);    
@@ -103,16 +103,17 @@ main > #topo > #topo-titulo >  p{
 /* CONTAINER ABOUT */
 
 main > #about{
-    height: 700px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-image: linear-gradient(#787878,white);
     width: 100%;
+    padding: 10px;
 }
 
 main > #about > img{
-    max-width: 400px;
+    max-width: 60vw;
     border: 10px dashed gray;
     border-radius: 50%;
 }
@@ -153,9 +154,12 @@ main > #about > #about-texto-dois > h2{
 /* CONTAINER SKILLS */
 
 main > #skills{
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;    
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
 }
 
 main > #skills > h2{
@@ -163,7 +167,6 @@ main > #skills > h2{
 }
 
 main > #skills > a > img{
-
     max-width: 130px;
     border: transparent;
     border-radius: 30px;
@@ -173,28 +176,27 @@ main > #skills > a > img{
 
 main > #portifolio{
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     background-image: linear-gradient(white,#B8B8B8);
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding: 30px;
     border-bottom: 2px solid rgba(114, 113, 113, 0.883);
 }
 
 main > #portifolio > h2{
     max-width: 300px;
     text-align: left;
-    padding: 30px;
 }
 
 main > #portifolio > #portifolio-img{
     display: flex;
-    max-width: 800px ;
+    flex-direction: column;
     
 }
 
 main > #portifolio > #portifolio-img > img{
-    max-width: 200px;
+    width: 85vw;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
@@ -284,10 +286,12 @@ footer{
     border-top: 2px solid rgba(0, 0, 0, 0.2);
     background-color: black;
     color: #B8B8B8;
+    padding: 20px;
 }
 
 footer > article{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
