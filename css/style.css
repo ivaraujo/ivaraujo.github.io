@@ -156,7 +156,6 @@ main > #about > #about-texto-dois > h2{
 main > #skills{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;    
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     padding: 10px;
@@ -177,7 +176,6 @@ main > #skills > a > img{
 main > #portifolio{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     background-image: linear-gradient(white,#B8B8B8);
     padding: 30px;
@@ -292,7 +290,6 @@ footer{
 footer > article{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -333,3 +330,28 @@ footer > #rodape-texto{
     text-align: center;
     padding-top: 20px;
 }
+
+/*
+@media screen and (min-width: 768px ){
+    main > #about{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    main > #skills{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    main > #portifolio{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    main > #contact{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer > article{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+/**/
