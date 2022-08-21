@@ -165,7 +165,12 @@ main > #skills > h2{
     padding-bottom: 30px;
 }
 
-main > #skills >#skills-img > a > img{
+main > #skills > #skills-img{
+    display: flex;
+    flex-direction: column;
+}
+
+main > #skills > #skills-img > a > img{
     max-width: 130px;
     border: transparent;
     border-radius: 30px;
@@ -335,7 +340,7 @@ footer > #rodape-texto{
 }
 
 
-@media screen and (min-width: 768px ){
+@media screen and (min-width: 768px){
 
     /*ABOUT*/
 
@@ -352,7 +357,7 @@ footer > #rodape-texto{
 
     main > #skills > #skills-img{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     /*PORTIFOLIO*/
