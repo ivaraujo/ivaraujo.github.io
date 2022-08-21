@@ -316,7 +316,8 @@ footer > article > #rodape-botoes > a{
     color: #B8B8B8;
 }
 
-footer > article > #rodape-botoes > a:hover{    
+footer > article > #rodape-botoes > a:hover{  
+    color: rgb(241, 241, 12);  
     border-bottom: 1px solid rgb(241, 241, 12);
     border-radius: 10px;
 }
