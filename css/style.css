@@ -75,17 +75,29 @@ section{
 
 main > #topo{ 
     display: flex;
-    justify-content: center;
-    align-items: flex-end;   
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;   
     padding-bottom: 100px;     
-    height: 700px;   
-    background: url(../img/ivan_topo.jpg);
-    background-repeat: no-repeat;
+    height: 700px;
+    background:white;
+    background: url(../img/cod_binario.png);
+    border-bottom: 2px solid rgba(54, 54, 54, 0.883);
+   /* background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover;
-    border-bottom: 10px solid rgba(0, 0, 0, 0.733);    
-    color: white;   
+    background-size: cover; 
+    border-bottom: 10px solid rgba(0, 0, 0, 0.733); */
+    color: black;
+    text-shadow: 0px 0px 2px black;   
+}
+
+main > #topo > #topo-img{
+    width: 600px;
+}
+
+main > #topo > #topo-img > img{
+    max-width: 600px;
 }
 
 main > #topo > #topo-titulo{
@@ -114,19 +126,22 @@ main > #about{
 
 main > #about > img{
     max-width: 60vw;
-    border: 10px dashed gray;
-    border-radius: 50%;
+    border: 3px solid black;
+    border-radius: 10px 0px;
+    padding: 5px;
 }
 
 main > #about > #about-texto-um{
     max-width: 350px;
     text-align: justify;
     font-size: 1em;
+    padding-bottom: 20px;
 }
 
 main > #about > #about-texto-um > h2{
     color: rgb(241, 241, 12);
     text-shadow: 0px 0px 10px black;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -157,7 +172,7 @@ main > #skills{
     display: flex;
     flex-direction: column;
     text-align: center;    
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+   /* */
     padding: 10px;
 }
 
@@ -241,6 +256,8 @@ main > #contact > article > #contact-formulario > form{
 main > #contact > article > #contact-formulario > form > p > label{
     color: white;
     padding-bottom: 20px;
+    text-shadow: 0px 0px 10px black; 
+    font-size: 1.2em;
 }
 
 main > #contact > article >  #contact-formulario > form > input{
@@ -351,7 +368,9 @@ footer > #rodape-texto{
     }
 
     main > #about > img{
-        max-width: 300px;
+        max-width: 400px;
+        border: 5px solid black;
+        border-radius: 20px 0px;
     }
 
     /*SKILLS*/ 
