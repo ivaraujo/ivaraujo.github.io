@@ -26,7 +26,7 @@ body{
 }
 
 a{
-    color: black;
+    color: white;
     font-size: 1.5em;
     font-family: var(--titulo);
     padding: 10px;
@@ -48,8 +48,8 @@ p{
 /* CONTAINER HEDEAR */
 
 header{
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    background-color: white;
+    border-top: 1px solid rgba(54, 54, 54, 0.883);
+    background-image: linear-gradient(#0511F2,#131313);
     padding: 10px;    
 }
 
@@ -60,7 +60,7 @@ nav{
 
 
 nav > #cabecalho-botoes > a:hover{    
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 10px white;
 }
 
 /* BASE DO CORPO */
@@ -83,7 +83,7 @@ main > #topo{
     align-items: center;
     height: 700px;
     border-bottom: 2px solid rgba(54, 54, 54, 0.883);
-    background-image: url(../img/ivan_topo.jpg);
+    background-image: url(../img/Ivan_topo_preto.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -106,9 +106,9 @@ main > #topo > #topo-fundo > #topo-logo > img{
     max-width: 600px;
 }
 
-main > #topo > #topo-fundo > #topo-titulo{
+/*main > #topo > #topo-fundo > #topo-titulo{
     
-}
+}*/
 
 main > #topo > #topo-fundo > #topo-titulo > h1{
     font-size: 4em;
@@ -127,7 +127,7 @@ main > #about{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(#787878,white);
+    background-image: linear-gradient(#131313,#0511F2);
     width: 100%;
     padding: 10px;
 }
@@ -151,12 +151,16 @@ main > #about > #about-texto-um > h2{
     padding-bottom: 20px;
 }
 
+main > #about > #about-texto-um > p{
+    color: white;
+}
+
 main > #about > #about-texto-um > p > strong{
     color: red;
 }
 
 main > #about > #about-texto-dois > h2{
-    color: black;
+    color: white;
     font-size: 1em;
 }
 
@@ -167,8 +171,12 @@ main > #about > #about-texto-dois{
 }
 
 main > #about > #about-texto-dois > h2{
-    color: red;
+    color: rgb(241, 241, 12);
     font-size: 3em;
+}
+
+main > #about > #about-texto-dois > p{
+    color: white;
 }
 
 
@@ -178,12 +186,13 @@ main > #skills{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: white; 
+    background-color: #0511F2; 
     padding: 10px;
 }
 
 main > #skills > h2{
     padding-bottom: 30px;
+    color: rgb(241, 241, 12);
 }
 
 main > #skills > #skills-img{
@@ -193,8 +202,9 @@ main > #skills > #skills-img{
 
 main > #skills > #skills-img > a > img{
     max-width: 130px;
-    border: transparent;
+    border: 10px solid white;
     border-radius: 30px;
+    background-color: white;
 }
 
 /* CONTAINER PORTIFOLIO */
@@ -203,7 +213,9 @@ main > #portifolio{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(white,#B8B8B8);
+    background-color: #0511F2;
+    color: rgb(241, 241, 12);
+    /*background-image: linear-gradient(#0511F2,#131313);*/
     padding: 10px;
     border-bottom: 2px solid rgba(114, 113, 113, 0.883);
 }
@@ -223,7 +235,7 @@ main > #portifolio > #portifolio-img{
 
 main > #portifolio > #portifolio-img > img{
     width: 85vw;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
     border-radius: 5px;
 }
 
@@ -235,8 +247,9 @@ main > #portifolio > #portifolio-img > img:hover{
 /* CONTAINER CONTACT */
 
 main > #contact{
-    background-image: linear-gradient(#B8B8B8,#131313);
+    background-image: linear-gradient(#0511F2,#131313);
     border-bottom: 1px solid rgba(54, 54, 54, 0.883);
+    color: rgb(241, 241, 12);
 }
 
 main > #contact > article {
