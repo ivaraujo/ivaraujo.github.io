@@ -73,43 +73,49 @@ section{
 
 /* CONTAINER TOPO */
 
-main > #topo{ 
+main > #topo{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;   
-    padding-bottom: 100px;     
-    height: 700px;
-    background:white;
-    background: url(../img/cod_binario.png);
+    align-items: center;
+    height: 700px; 
+    background-image: linear-gradient(black,#787878);
     border-bottom: 2px solid rgba(54, 54, 54, 0.883);
-   /* background-repeat: no-repeat;
+    background-image: url(../img/ivan_topo.jpg);
+    background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover; 
-    border-bottom: 10px solid rgba(0, 0, 0, 0.733); */
-    color: black;
-    text-shadow: 0px 0px 2px black;   
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    text-align: center;  
 }
 
-main > #topo > #topo-img{
+main > #topo > #topo-fundo{
+    
+    width: 100%;
+}
+
+main > #topo > #topo-fundo > #topo-logo{
     width: 600px;
 }
 
-main > #topo > #topo-img > img{
+main > #topo > #topo-fundo > #topo-logo > img{
     max-width: 600px;
 }
 
-main > #topo > #topo-titulo{
-    text-align: center;
+main > #topo > #topo-fundo > #topo-titulo{
+    
 }
 
-main > #topo > #topo-titulo > h1{
-    font-size: 3em;
+main > #topo > #topo-fundo > #topo-titulo > h1{
+    font-size: 4em;
+    
 }
 
-main > #topo > #topo-titulo >  p{
+main > #topo > #topo-fundo > #topo-titulo >  p{
     font-size: 1.5em;
+    padding-bottom: 250px;
 }
 
 /* CONTAINER ABOUT */
@@ -126,8 +132,6 @@ main > #about{
 
 main > #about > img{
     max-width: 60vw;
-    border: 3px solid black;
-    border-radius: 10px 0px;
     padding: 5px;
 }
 
@@ -171,8 +175,8 @@ main > #about > #about-texto-dois > h2{
 main > #skills{
     display: flex;
     flex-direction: column;
-    text-align: center;    
-   /* */
+    text-align: center;
+    background-color: white; 
     padding: 10px;
 }
 
@@ -345,16 +349,30 @@ footer > article > #rodape-botoes > p{
     font-size: 10pt;
 }
 
-footer > article > #rodape-logo > img{
-    max-width: 200px;
-    border: transparent;
-    border-radius: 50%;
+footer > article > #rodape-sociais{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+footer > article > #rodape-sociais > h3{
+    font-size: 30px;
+    color: rgb(241, 241, 12);
+}
+
+footer > article > #rodape-sociais > a{    
+    color: #B8B8B8;
+}
+
+footer > article > #rodape-sociais > a:hover{  
+    color: rgb(241, 241, 12);  
+    border-bottom: 1px solid rgb(241, 241, 12);
+    border-radius: 10px;
 }
 
 footer > #rodape-texto{
-    height: 50px;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 
@@ -369,8 +387,6 @@ footer > #rodape-texto{
 
     main > #about > img{
         max-width: 400px;
-        border: 5px solid black;
-        border-radius: 20px 0px;
     }
 
     /*SKILLS*/ 
