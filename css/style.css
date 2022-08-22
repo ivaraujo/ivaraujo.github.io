@@ -132,13 +132,8 @@ main > #about{
     padding: 10px;
 }
 
-main > #about > img{
-    max-width: 60vw;
-    padding: 5px;
-}
-
 main > #about > #about-texto-um{
-    max-width: 350px;
+    max-width: 250px;
     text-align: justify;
     font-size: 1em;
     padding-bottom: 20px;
@@ -165,7 +160,7 @@ main > #about > #about-texto-dois > h2{
 }
 
 main > #about > #about-texto-dois{
-    max-width: 350px;
+    max-width: 600px;
     text-align: justify;
     font-size: 1.5em;
 }
@@ -217,7 +212,7 @@ main > #portifolio{
     color: rgb(241, 241, 12);
     /*background-image: linear-gradient(#0511F2,#131313);*/
     padding: 10px;
-    border-bottom: 2px solid rgba(114, 113, 113, 0.883);
+    border-bottom: 1px solid rgba(114, 113, 113, 0.883);    
 }
 
 main > #portifolio > h2{
@@ -230,13 +225,13 @@ main > #portifolio > h2{
 main > #portifolio > #portifolio-img{
     display: flex;
     flex-direction: column;
-    
 }
 
 main > #portifolio > #portifolio-img > img{
     width: 85vw;
-    border: 2px solid white;
+    border: 2px solid #131313;
     border-radius: 5px;
+    background-image: url(../img/Em\ construção....png);
 }
 
 main > #portifolio > #portifolio-img > img:hover{
@@ -253,7 +248,7 @@ main > #contact{
 }
 
 main > #contact > article {
-    background-image: url(../img/cod_binario.png);
+    /*background-image: url(../img/cod_binario.png);*/
     background-size: 5%;
 }
 
@@ -324,9 +319,9 @@ main > #contact > article >  #contact-formulario > form > #contact-botao > #envi
 footer{
     display: flex;
     flex-direction: column;
-    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #131313;
-    color: #B8B8B8;
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -349,7 +344,7 @@ footer > article > #rodape-botoes > h3{
 }
 
 footer > article > #rodape-botoes > a{    
-    color: #B8B8B8;
+    color: white;
 }
 
 footer > article > #rodape-botoes > a:hover{  
@@ -376,7 +371,7 @@ footer > article > #rodape-sociais > h3{
 }
 
 footer > article > #rodape-sociais > a{    
-    color: #B8B8B8;
+    color: white;
 }
 
 footer > article > #rodape-sociais > a:hover{  
@@ -433,6 +428,7 @@ footer > #rodape-texto{
 
     main > #portifolio > #portifolio-img > img{
         max-width: 15vw;
+        height: 500px;
     }
 
     /*CONTACT*/
