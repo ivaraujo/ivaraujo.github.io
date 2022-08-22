@@ -8,6 +8,7 @@
     --padrao: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 *{ 
     margin: 0px;
     padding: 0px;
@@ -78,8 +79,7 @@ main > #topo{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 700px; 
-    background-image: linear-gradient(black,#787878);
+    height: 700px;
     border-bottom: 2px solid rgba(54, 54, 54, 0.883);
     background-image: url(../img/ivan_topo.jpg);
     background-repeat: no-repeat;
@@ -233,12 +233,13 @@ main > #portifolio > #portifolio-img > img:hover{
 /* CONTAINER CONTACT */
 
 main > #contact{
-    background-image: linear-gradient(#B8B8B8,black);
-    border-bottom: 2px solid rgba(54, 54, 54, 0.883);
+    background-image: linear-gradient(#B8B8B8,#131313);
+    border-bottom: 1px solid rgba(54, 54, 54, 0.883);
 }
 
 main > #contact > article {
     background-image: url(../img/cod_binario.png);
+    background-size: 5%;
 }
 
 main > #contact > article > h2{
@@ -249,7 +250,6 @@ main > #contact > article > h2{
 main > #contact > article >  #contact-formulario{
     max-width: 800px;
     margin: auto;
-    background-color: rgba(128, 128, 128, 0.13);
 }
 
 main > #contact > article > #contact-formulario > form{
@@ -310,7 +310,7 @@ footer{
     display: flex;
     flex-direction: column;
     border-top: 2px solid rgba(0, 0, 0, 0.2);
-    background-color: black;
+    background-color: #131313;
     color: #B8B8B8;
     padding: 20px;
     text-align: center;
@@ -372,7 +372,8 @@ footer > article > #rodape-sociais > a:hover{
 
 footer > #rodape-texto{
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(54, 54, 54, 0.883);
 }
 
 
