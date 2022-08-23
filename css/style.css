@@ -23,6 +23,7 @@
 body{    
     width: 100vw;
     font-family: var(--padrao);
+    background-color: #0511F2;
 }
 
 a{
@@ -132,45 +133,21 @@ main > #about{
     padding: 10px;
 }
 
-main > #about > #about-texto-um{
-    max-width: 250px;
-    text-align: justify;
-    font-size: 1em;
-    padding-bottom: 20px;
-}
-
-main > #about > #about-texto-um > h2{
+main > #about > #about-texto > h1{
     color: rgb(241, 241, 12);
     text-shadow: 0px 0px 10px black;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-main > #about > #about-texto-um > p{
-    color: white;
-}
 
-main > #about > #about-texto-um > p > strong{
-    color: red;
-}
-
-main > #about > #about-texto-dois > h2{
-    color: white;
-    font-size: 1em;
-}
-
-main > #about > #about-texto-dois{
+main > #about > #about-texto{
     max-width: 600px;
     text-align: justify;
     font-size: 1.5em;
 }
 
-main > #about > #about-texto-dois > h2{
-    color: rgb(241, 241, 12);
-    font-size: 3em;
-}
-
-main > #about > #about-texto-dois > p{
+main > #about > #about-texto > p{
     color: white;
 }
 
@@ -228,7 +205,8 @@ main > #portifolio > #portifolio-img{
 }
 
 main > #portifolio > #portifolio-img > img{
-    width: 85vw;
+    width: 100%;
+    height: 250px;
     border: 2px solid #131313;
     border-radius: 5px;
     background-image: url(../img/Em\ construção....png);
@@ -380,6 +358,10 @@ footer > article > #rodape-sociais > a:hover{
     border-radius: 10px;
 }
 
+footer > article > #rodape-contatos{
+    padding-bottom: 20px;
+}
+
 footer > #rodape-texto{
     text-align: center;
     padding-top: 20px;
@@ -427,7 +409,7 @@ footer > #rodape-texto{
     }
 
     main > #portifolio > #portifolio-img > img{
-        max-width: 15vw;
+        max-width: 100%;
         height: 500px;
     }
 
