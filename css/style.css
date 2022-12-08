@@ -174,10 +174,11 @@ main > #skills > #skills-img{
 }
 
 main > #skills > #skills-img > a > img{
-    max-width: 80px;
-    border: 10px solid white;
-    border-radius: 30px;
+    max-width: 60px;
     background-color: white;
+    padding: 10px;
+    border: 1px;
+    border-radius: 40%;
 }
 
 /* CONTAINER PORTIFOLIO */
