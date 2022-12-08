@@ -77,7 +77,7 @@ section{
 
 /* CONTAINER TOPO */
 
-main > #topo{
+#topo{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -94,32 +94,32 @@ main > #topo{
     text-align: center;  
 }
 
-main > #topo > #topo-fundo{
+#topo > #topo-fundo{
     
     width: 100%;
 }
 
-main > #topo > #topo-fundo > #topo-logo{
+#topo > #topo-fundo > #topo-logo{
     width: 600px;
 }
 
-main > #topo > #topo-fundo > #topo-logo > img{
+#topo > #topo-fundo > #topo-logo > img{
     max-width: 600px;
 }
 
-main > #topo > #topo-fundo > #topo-titulo > h1{
+#topo > #topo-fundo > #topo-titulo > h1{
     font-size: 4em;
     
 }
 
-main > #topo > #topo-fundo > #topo-titulo >  p{
+#topo > #topo-fundo > #topo-titulo >  p{
     font-size: 1.5em;
     padding-bottom: 250px;
 }
 
 /* CONTAINER ABOUT */
 
-main > #about{
+#about{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -129,7 +129,7 @@ main > #about{
     padding: 10px;
 }
 
-main > #about > #about-texto > h1{
+#about > #about-texto > h1{
     color: rgb(241, 241, 12);
     text-shadow: 0px 0px 10px black;
     padding-top: 20px;
@@ -137,7 +137,7 @@ main > #about > #about-texto > h1{
 }
 
 
-main > #about > #about-texto{
+#about > #about-texto{
     max-width: 600px;
     text-align: justify;
     font-size: 1.5em;
@@ -148,14 +148,14 @@ main > #about > #about-texto{
     margin-top:30px;
 }
 
-main > #about > #about-texto > p{
+#about > #about-texto > p{
     color: white;
 }
 
 
 /* CONTAINER SKILLS */
 
-main > #skills{
+#skills{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -163,17 +163,17 @@ main > #skills{
     padding: 10px;
 }
 
-main > #skills > h2{
+#skills > h2{
     padding-bottom: 30px;
     color: rgb(241, 241, 12);
 }
 
-main > #skills > #skills-img{
+#skills > #skills-img{
     display: flex;
     flex-direction: column;
 }
 
-main > #skills > #skills-img > a > img{
+#skills > #skills-img > a > img{
     max-width: 60px;
     background-color: white;
     padding: 10px;
@@ -183,9 +183,9 @@ main > #skills > #skills-img > a > img{
 
 /* CONTAINER PORTIFOLIO */
 
-main > #portifolio{
+#portifolio{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: #131313;
     color: rgb(241, 241, 12);
@@ -194,11 +194,14 @@ main > #portifolio{
     border-bottom: 1px solid rgba(114, 113, 113, 0.883);    
 }
 
-main > #portifolio > h2{
+#portifolio > h2{
     max-width: 300px;
-    text-align: left;
     padding: 20px;
-    margin-right: 100px;
+}
+
+#portifolio > article{
+    display: flex;
+    flex-direction: row;
 }
 
 .projetos{
