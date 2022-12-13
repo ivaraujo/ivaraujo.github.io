@@ -29,7 +29,7 @@
             
               <!-- Botões-->
               <div id="cabecalho-botoes">
-                <a href="index.html">Inicio</a>
+                <a href="index.html">Home</a>
                 <a href="#about" rel="next">Sobre</a>
                 <a href="#portifolio">Projetos</a>
                 <a href="#contact">Contato</a>
@@ -39,32 +39,30 @@
     </header>
 
     <main>
-        <section id="about">
-            <article>
-                <div id="about-texto">                
-                    <h1>Olá, sou Ivan Viana!</h1>
-                    <p>Analista de sistemas e futuro desenvolvedor full-stack. Possuo 6 anos de experiência de atendimento ao cliente, e agora busco me aperfeiçoar em programação para desenvolvedor softwares de boa qualidade e fácil uso.</p>
-                </div>
-            </article>               
-             <article id="skills">         
-                <h2>My Skills</h2>
-                <div id="skills-icons">
-                    <a href="https://www.flaticon.com/br/icones-gratis/html" title="html 5 ícones"><img src="icons/html.png" alt="Html 5 ícones criados por Freepik - Flaticon"></a>
-                    <a href="https://www.flaticon.com/br/icones-gratis/css" title="css 3 ícones"><img src="icons/css.png" alt="Css 3 ícones criados por Freepik - Flaticon"></a>
-                    <!--
-                        <a href="https://www.flaticon.com/br/icones-gratis/javascript" title="javascript ícones"><img src="icons/js.png" alt="Javascript ícones criados por Freepik - Flaticon"></a>                
-                        <a href="https://www.flaticon.com/br/icones-gratis/php" title="php ícones"><img src="icons/php.png" alt="Php ícones criados por Freepik - Flaticon"></a>
-                        <a href="https://www.flaticon.com/br/icones-gratis/mysql" title="mysql ícones"><img src="icons/mysql.png" alt="Mysql ícones criados por Freepik - Flaticon"></a>
-                        <a href="https://www.flaticon.com/free-icons/react" title="react icons"><img src="icons/react-js.png" alt="React icons created by Kiranshastry - Flaticon"></a>
-                        <a href="https://www.flaticon.com/free-icons/node-js" title="node js icons"><img src="icons/node-js.png" alt="Node js icons created by Freepik - Flaticon"></a>
-                        <a href="https://www.flaticon.com/free-icons/coding" title="coding icons"><img src="icons/c-.png" alt="Coding icons created by Freepik - Flaticon"></a>
-                        <a href="https://www.flaticon.com/free-icons/c-sharp" title="c sharp icons"><img src="icons/c-sharp.png" alt="C sharp icons created by Freepik - Flaticon"></a>
-                    -->
-                </div>            
-            </article>          
+        <section id="topo"> </section>
+        <section id="about">            
+            <div id="about-texto">
+                <h1>Olá, sou Ivan Viana!</h1>
+                <p>Analista de sistemas e futuro desenvolvedor full-stack. Possuo 6 anos de experiência de atendimento ao cliente, e agora busco me aperfeiçoar em programação para desenvolvedor softwares de boa qualidade e fácil uso.</p>
+            </div>            
         </section>
-        
-        <section id="projetos">
+        <section id="skills">            
+            <h2>My Skills</h2>
+            <div id="skills-img">
+                <a href="https://www.flaticon.com/br/icones-gratis/html" title="html 5 ícones"><img src="icons/html.png" alt="Html 5 ícones criados por Freepik - Flaticon"></a>
+                <a href="https://www.flaticon.com/br/icones-gratis/css" title="css 3 ícones"><img src="icons/css.png" alt="Css 3 ícones criados por Freepik - Flaticon"></a>
+                <!--
+                    <a href="https://www.flaticon.com/br/icones-gratis/javascript" title="javascript ícones"><img src="icons/js.png" alt="Javascript ícones criados por Freepik - Flaticon"></a>                
+                    <a href="https://www.flaticon.com/br/icones-gratis/php" title="php ícones"><img src="icons/php.png" alt="Php ícones criados por Freepik - Flaticon"></a>
+                    <a href="https://www.flaticon.com/br/icones-gratis/mysql" title="mysql ícones"><img src="icons/mysql.png" alt="Mysql ícones criados por Freepik - Flaticon"></a>
+                    <a href="https://www.flaticon.com/free-icons/react" title="react icons"><img src="icons/react-js.png" alt="React icons created by Kiranshastry - Flaticon"></a>
+                    <a href="https://www.flaticon.com/free-icons/node-js" title="node js icons"><img src="icons/node-js.png" alt="Node js icons created by Freepik - Flaticon"></a>
+                    <a href="https://www.flaticon.com/free-icons/coding" title="coding icons"><img src="icons/c-.png" alt="Coding icons created by Freepik - Flaticon"></a>
+                    <a href="https://www.flaticon.com/free-icons/c-sharp" title="c sharp icons"><img src="icons/c-sharp.png" alt="C sharp icons created by Freepik - Flaticon"></a>
+                -->
+            </div>            
+        </section>
+        <section id="portifolio">
             <h2>Projetos</h2>
             <article>
                 <a href="https://ivanviana.com.br/projeto-igor/"><div class="projetos" id="projeto01">                
@@ -84,26 +82,44 @@
                 </div></a>
             </article>
                       
+        </section>        
+        <section id="contact">
+            <article>
+                <h2>Contato</h2>
+                    <div id="contact-formulario">
+                        <form action="#" method="post">
+                        
+                            <p><label for="nome">Name:</label></p>
+                            <input type="text" id="nome" size="20" maxlength="30" placeholder="Your Name">
+                        
+                        
+                            <p><label for="assunto">Subject:</label></p>
+                            <input type="text" id="assunto" size="20" maxlength="50" placeholder="Your Subject">
+                       
+                        
+                            <p><label for="email">E-mail:</label></p>
+                            <input type="email" id="email" size="20" maxlength="50" placeholder="email@example.com">
+                        
+                        
+                            <p><label for="mensagem">Message:</label></p>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Your message..."></textarea>
+                       
+
+                            <div id="contact-botao">
+                                <button type="submit" id="enviar">Send</button>
+                            </div>
+                        </form>
+                    </div>
+            </article> 
         </section>
     </main>
-    <footer>        
-        <section id="rodape">
-            <form action="#" method="post" id="contact">                
-                <label for="nome">Name:</label>
-                <input type="text" size="20" maxlength="30" placeholder="Your Name">
-                <label for="assunto">Subject:</label>
-                <input type="text" size="20" maxlength="50" placeholder="Your Subject">
-                <label for="email">E-mail:</label>
-                <input type="email" size="20" maxlength="50" placeholder="email@example.com">
-                <label for="mensagem">Message:</label>
-                <textarea name="mensagem" cols="30" rows="10" placeholder="Your message..."></textarea> 
-                <button type="submit">Send</button>
-            </form> 
+    <footer>
+        <article>
             <div id="rodape-botoes">
                 <h3>MENU</h3>
-                <a href="index.html">Inicio</a>
                 <a href="#about">About</a>
                 <a href="#portifolio">Portifolio</a>
+                <a href="#contact">Contact</a>
             </div>
             <div id="rodape-sociais">
                 <h3>SOCIAL MEDIA</h3>
@@ -112,7 +128,12 @@
                 <a href="#" target="_blank">Youtube</a>
                 <a href="#" target="_blank">Instagram</a>
             </div>
-        </section>        
+            <div id="rodape-contatos">
+                <p><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg></strong> (99) 9999-9999</p>
+            </div>
+        </article>        
         <div id="rodape-texto"><p>Copyright &#169 2022 Ivan Viana</p></div>    
     </footer>
     
