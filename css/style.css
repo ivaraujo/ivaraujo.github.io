@@ -21,7 +21,8 @@
 /* CONF GERAIS */
 
 body{    
-    width: 100vw;
+    width: 100%;
+    min-height: 100vh;
     font-family: var(--padrao);
     background-color: #0511F2;
 }
@@ -90,7 +91,7 @@ span{
 /* BASE DO CORPO */
 
 main{
-    width: 100vw;
+    width: 100%;
     background-image: linear-gradient(#131313,#0511F2);
 }
 
@@ -233,6 +234,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     width: 1200px;
+    padding: 30px;
 }
 
 form{
@@ -306,6 +308,7 @@ form > button:hover{
     flex-direction: column;
     align-items: flex-start;
     justify-items: center;
+    margin-top: 150px;
 }
 
 #rodape-botoes > h3{
@@ -331,6 +334,7 @@ form > button:hover{
 #rodape-sociais{
     display: flex;
     flex-direction: column;
+    margin-top: 150px;
 }
 
 #rodape-sociais > h3{
@@ -355,69 +359,60 @@ form > button:hover{
     border-top: 1px solid rgba(54, 54, 54, 0.883);
 }
 
+/*
+@media screen and (max-width: 780px){
 
-@media screen and (min-width: 480px){
-    /*TOPO*/
-
-    main > #topo{
-        height: 780px;
+    section{
+        width: 100%;
     }
 
-    /*ABOUT*/
+  
 
-    main > #about{
-        flex-direction: row;
-        justify-content: space-around;        
+   header{
+    max-height: 600px;
+   }
+
+  
+
+    #about{
+        display: flex;
+        flex-direction: column;        
+    }    
+
+    #about-texto{
+        border: 0px;
     }
 
-    main > #about > img{
-        max-width: 400px;
-    }
-
-    /*SKILLS*/ 
-
-    main > #skills > #skills-img{
-        flex-direction: row;
-        justify-content: center;        
+    #skills{
+        flex-direction: column;
     }
 
     
-    /*PORTIFOLIO*/
-
-    main > #portifolio{
-        flex-direction: row;
+    #projetos > article{
+        flex-direction: column;
     }
 
-    main > #portifolio > h2{
-        font-size: 3em;
-        text-align: center;
+    .projetos{
+        flex-direction: column;
+        width: 150px;
+        height: 150px;
+    }
+       
+
+    #rodape{
+        flex-direction: column;
     }
 
-    main > #portifolio > .projetos{
-        background-color: yellow;
-        max-width: 150px;
-        margin-bottom: 10px;
+    #rodape-sociais{
+        margin-top: 0px;
     }
 
-    main > #portifolio > .projetos > img{
+    #rodape-sociais{
+        margin-top: 150px;
     }
 
-    /*CONTACT*/
-
-    main > #contact{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    main > #contact > article > h2{
-        font-size: 3em;
-    }
-
-    /*FOOTER*/
-
-    footer > article{
-        flex-direction: row;
-        justify-content: space-around;
+    form{
+        width: 100%;
     }
 }
-/**/
+*/
