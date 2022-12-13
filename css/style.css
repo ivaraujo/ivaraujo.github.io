@@ -49,6 +49,8 @@ p{
 /* CONTAINER HEDEAR */
 
 header{
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 800px;  
     background-image: url(../img/Ivan_topo_preto6.png);
@@ -67,6 +69,22 @@ nav{
 
 nav > #cabecalho-botoes > a:hover{    
     text-shadow: 0px 0px 10px white;
+}
+
+#texto-header{
+    text-shadow: 0px 0px 10px black;
+    line-height: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1em;
+    color: white;
+}
+
+span{    
+    color: rgb(241, 241, 12);
+    font-size: 2em;
 }
 
 /* BASE DO CORPO */
@@ -95,21 +113,22 @@ article{
 }
 
 #about-texto{
-    font-size: 1.5em;
     border-right: 1px solid rgba(114, 113, 113, 0.883);
     padding: 50px;
 }
 
-#about-texto > h1{
+#about-texto > h2{
     color: rgb(241, 241, 12);
     text-shadow: 0px 0px 10px black;
+    font-size: 2em;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 #about-texto > p{
     color: white;
-    text-align: center;
+    text-align: left;
+    font-size: 1.5em;
 }
 
 /* CONTAINER SKILLS */
@@ -125,6 +144,7 @@ article{
 #skills > h2{
     padding-bottom: 30px;
     color: rgb(241, 241, 12);
+    font-size: 2em;
 }
 
 #skills-icons{
@@ -170,6 +190,16 @@ article{
     height: 350px;
     border: 5px solid rgb(241, 241, 12);
     border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.projetos > img{    
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.projetos:hover{
+    box-shadow: 0px 0px 20px white;
+    background: transparent;
 }
 
 .projetos > h4{
@@ -179,48 +209,47 @@ article{
     padding: 5px;
 }
 
-.projetos:hover{
-    border: 5px solid #0511F2;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px white;
-}
-
 .projetos > img{
     max-width: 100%;
     border-radius: 5px;
 }
-
 
 /* CONTAINER FOOTER */
 
 footer{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #131313;
     color: white;
+    width: 100%;
+    text-align: center;
 }
 
 #rodape{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 1200px;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: red;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: center;
+    width: 50%;
     padding: 15px;
 }
 
 form > label{
+    display: flex;
     color: white;
     font-size: 1.2em;
+    margin-bottom: 10px; 
 }
 
 form > input{
@@ -229,25 +258,54 @@ form > input{
     font-family: var(--texto);
     font-size: 1em;    
     border: 0px;
-    outline: none;  
+    outline: none;
+    margin-bottom: 10px;
+    transition: all 0.5s;  
 }
+
+form > input:focus{
+    border-radius: 16px;
+}
+
 form > textarea{
-    width: 100%; 
+    width: 100%;
+    padding: 10px; 
     font-family: var(--texto);
-    font-size: 14pt;
+    font-size: 1em;
     border: 0px;
     outline: none;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+form > textarea:focus{
+    border-radius: 16px;
 }
 
 form > button{
-    
-   text-align: center;
+    width: 40%; 
+    padding: 20px;
+    border: 2px solid rgb(241, 241, 12);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-family: var(--texto);
+    font-size: 1em;
+    transition: all 0.5s;
+}
+
+form > button:hover{
+    background-color: rgb(241, 241, 12);
+    color: #131313;
+    border-radius: 16px;
+    font-weight: bold;
 }
 
 #rodape-botoes{
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    align-items: flex-start;
+    justify-items: center;
 }
 
 #rodape-botoes > h3{
@@ -255,7 +313,7 @@ form > button{
     color: rgb(241, 241, 12);
 }
 
-#rodape-botoes > a{    
+#rodape-botoes > a{       
     color: white;
 }
 
@@ -266,7 +324,6 @@ form > button{
 }
 
 #rodape-botoes > p{
-    width: 300px;
     font-family: var(--texto);
     font-size: 10pt;
 }
@@ -274,7 +331,6 @@ form > button{
 #rodape-sociais{
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
 
 #rodape-sociais > h3{
@@ -293,8 +349,9 @@ form > button{
 }
 
 #rodape-texto{
+    width: 100%;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
     border-top: 1px solid rgba(54, 54, 54, 0.883);
 }
 
