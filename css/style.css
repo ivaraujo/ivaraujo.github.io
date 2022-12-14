@@ -24,7 +24,7 @@ body{
     width: 100%;
     min-height: 100vh;
     font-family: var(--padrao);
-    background-color: #0511F2;
+    background-image: linear-gradient(#131313,#0511F2,#131313);
 }
 
 a{
@@ -47,12 +47,8 @@ p{
     font-family: var(--texto);
 }
 
-/* CONTAINER HEDEAR */
-
 header{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: 800px;  
     background-image: url(../img/Ivan_topo_preto6.png);
     background-repeat: no-repeat;
@@ -61,6 +57,29 @@ header{
     background-size: cover;    
 }
 
+main{
+    width: 100%;
+    background-image: linear-gradient(#131313,#0511F2,#131313);
+}
+
+section{    
+    max-width: 1200px;
+    margin: auto;
+}
+
+article{
+    width: 100%;
+    padding: 15px;
+}
+
+footer{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #131313;
+}
+
+/* CONTAINER HEADER */
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -68,17 +87,18 @@ nav{
 }
 
 
-nav > #cabecalho-botoes > a:hover{    
+#cabecalho-botoes > a:hover{    
     text-shadow: 0px 0px 10px white;
 }
 
-#texto-header{
+#legenda{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
     text-shadow: 0px 0px 10px black;
     line-height: 40px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
+    height: 700px;
     font-size: 1em;
     color: white;
 }
@@ -88,62 +108,42 @@ span{
     font-size: 2em;
 }
 
-/* BASE DO CORPO */
+/* CONTAINER MAIN */
 
-main{
-    width: 100%;
-    background-image: linear-gradient(#131313,#0511F2);
-}
-
-section{
-    max-width: 1200px;
-    height: 600px;
-    margin: auto;
-    padding: 15px;
-}
-
-article{
-    width: 100%;
-}
-/* CONTAINER ABOUT */
-
-#about{
+#sobre{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    justify-items: center;
 }
 
-#about-texto{
+#sobre-texto{
     border-right: 1px solid rgba(114, 113, 113, 0.883);
-    padding: 50px;
+    padding: 15px;
+    width: 50%;
 }
 
-#about-texto > h2{
+#sobre-texto > h2{
     color: rgb(241, 241, 12);
     text-shadow: 0px 0px 10px black;
     font-size: 2em;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
-#about-texto > p{
+#sobre-texto > p{
     color: white;
     text-align: left;
     font-size: 1.5em;
 }
 
-/* CONTAINER SKILLS */
-
 #skills{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
-    padding: 10px;
+    width: 50%;
 }
 
-#skills > h2{
-    padding-bottom: 30px;
+#skills > div > h2{
     color: rgb(241, 241, 12);
     font-size: 2em;
 }
@@ -151,6 +151,7 @@ article{
 #skills-icons{
     display: flex;
     flex-direction: row;
+    padding: 15px;
 }
 
 #skills-icons > a > img{
@@ -160,8 +161,6 @@ article{
     border: 1px;
     border-radius: 40%;
 }
-
-/* CONTAINER PORTIFOLIO */
 
 #projetos{
     display: flex;
@@ -173,15 +172,12 @@ article{
     border-bottom: 1px solid rgba(114, 113, 113, 0.883);    
 }
 
-#projetos> h2{
-    padding: 20px;
-}
-
-#projetos > article{
+#projetos-img{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-items: center;
+    padding: 15px;
 }
 
 .projetos{
@@ -194,61 +190,33 @@ article{
     transition: all 0.5s;
 }
 
-.projetos > img{    
-    background-color: rgba(0, 0, 0, 0.5);
-    
+.projetos > img{ 
+    width: 100%;    
 }
 .projetos:hover{
     box-shadow: 0px 0px 20px white;
     background: transparent;
 }
 
-.projetos > h4{
-    color: #0511F2;
-    font-family: var(--texto);
-    text-shadow: 1px 1px 0px black;
-    padding: 5px;
-}
-
-.projetos > img{
-    max-width: 100%;
-    border-radius: 5px;
-}
-
 /* CONTAINER FOOTER */
-
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: #131313;
-    color: white;
-    width: 100%;
-    text-align: center;
-}
 
 #rodape{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 1200px;
-    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-items: flex-start;
     justify-content: center;
-    width: 50%;
+    width: 30%;
     padding: 15px;
 }
 
 form > label{
-    display: flex;
     color: white;
     font-size: 1.2em;
     margin-bottom: 10px; 
@@ -260,7 +228,6 @@ form > input{
     font-family: var(--texto);
     font-size: 1em;    
     border: 0px;
-    outline: none;
     margin-bottom: 10px;
     transition: all 0.5s;  
 }
@@ -275,8 +242,7 @@ form > textarea{
     font-family: var(--texto);
     font-size: 1em;
     border: 0px;
-    outline: none;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     transition: all 0.5s;
 }
 
@@ -285,7 +251,6 @@ form > textarea:focus{
 }
 
 form > button{
-    width: 40%; 
     padding: 20px;
     border: 2px solid rgb(241, 241, 12);
     background: transparent;
@@ -308,7 +273,6 @@ form > button:hover{
     flex-direction: column;
     align-items: flex-start;
     justify-items: center;
-    margin-top: 150px;
 }
 
 #rodape-botoes > h3{
@@ -334,7 +298,6 @@ form > button:hover{
 #rodape-sociais{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
 }
 
 #rodape-sociais > h3{
@@ -357,6 +320,7 @@ form > button:hover{
     text-align: center;
     padding: 20px;
     border-top: 1px solid rgba(54, 54, 54, 0.883);
+    color: rgb(241, 241, 12);
 }
 
 /*

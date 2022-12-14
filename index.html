@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav id="home">
+        <nav>
             <!--Redes sociais-->
             <div id="cabecalho-redes">
                 <a href="https://github.com/ivaraujo" target="_blank" rel="external"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -35,19 +35,21 @@
                 <a href="#contact">Contato</a>
             </div>
         </nav>              
-        <section id="texto-header">
-            <div>
-                <h1>Olá, sou</h1>
-                <h1><span>Ivan Viana!</span></h1>
-                <h1>Desenvolvedor de Software</h1>
-            </div>            
+        <section>
+            <article>
+                <div id="legenda">
+                    <h1>Olá, sou</h1>
+                    <h1><span>Ivan Viana!</span></h1>
+                    <h1>Desenvolvedor de Software</h1>
+                </div> 
+            </article>                       
         </section>
     </header>
 
     <main>
-        <section id="about">
-            <article>
-                <div id="about-texto">
+        <section>
+            <article id="sobre">
+                <div id="sobre-texto">
                     <h2>Minha trajetoria</h2>
                     <p>Possuo 6 anos de experiência de atendimento ao cliente, trabalhando no setor de TI, fazendo manutenção de computadores.</p>
                     <h2>Formações</h2>
@@ -55,13 +57,14 @@
                     <h2>Cursos</h2>
                     <p></p>
                 </div>
-            </article>               
-             <article id="skills">         
-                <h2>My Skills</h2>
-                <div id="skills-icons">
-                    <a href="https://www.flaticon.com/br/icones-gratis/html" title="html 5 ícones"><img src="icons/html.png" alt="Html 5 ícones criados por Freepik - Flaticon"></a>
-                    <a href="https://www.flaticon.com/br/icones-gratis/css" title="css 3 ícones"><img src="icons/css.png" alt="Css 3 ícones criados por Freepik - Flaticon"></a>
-                    <!--
+                <div id="skills">
+                    <div>
+                        <h2>My Skills</h2>
+                    </div>
+                    <div id="skills-icons">
+                        <a href="https://www.flaticon.com/br/icones-gratis/html" title="html 5 ícones"><img src="icons/html.png" alt="Html 5 ícones criados por Freepik - Flaticon"></a>
+                        <a href="https://www.flaticon.com/br/icones-gratis/css" title="css 3 ícones"><img src="icons/css.png" alt="Css 3 ícones criados por Freepik - Flaticon"></a>
+                        <!--
                         <a href="https://www.flaticon.com/br/icones-gratis/javascript" title="javascript ícones"><img src="icons/js.png" alt="Javascript ícones criados por Freepik - Flaticon"></a>                
                         <a href="https://www.flaticon.com/br/icones-gratis/php" title="php ícones"><img src="icons/php.png" alt="Php ícones criados por Freepik - Flaticon"></a>
                         <a href="https://www.flaticon.com/br/icones-gratis/mysql" title="mysql ícones"><img src="icons/mysql.png" alt="Mysql ícones criados por Freepik - Flaticon"></a>
@@ -69,59 +72,64 @@
                         <a href="https://www.flaticon.com/free-icons/node-js" title="node js icons"><img src="icons/node-js.png" alt="Node js icons created by Freepik - Flaticon"></a>
                         <a href="https://www.flaticon.com/free-icons/coding" title="coding icons"><img src="icons/c-.png" alt="Coding icons created by Freepik - Flaticon"></a>
                         <a href="https://www.flaticon.com/free-icons/c-sharp" title="c sharp icons"><img src="icons/c-sharp.png" alt="C sharp icons created by Freepik - Flaticon"></a>
-                    -->
+                        -->
+                    </div>                    
                 </div>            
             </article>          
-        </section>
-        
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <article>
-                <a href="https://ivanviana.com.br/projeto-igor/"><div class="projetos" id="projeto01">                
-                    <img src="projects/projeto-igor2.PNG" alt="Primeiro projeto">           
-                </div></a>
-                <a href="#"><div class="projetos" id="projeto02">
-                    
-                </div></a>
-                <a href="#"><div class="projetos" id="projeto03">
-                    
-                </div></a>
-                <a href="#"><div class="projetos" id="projeto04">
-                    
-                </div></a>
-                <a href="#"><div class="projetos" id="projeto05">
-                    
-                </div></a>
-            </article>
-                      
+        </section>        
+        <section>            
+            <article id="projetos">
+                <div>
+                    <h2>Projetos</h2>
+                </div>
+                <div id="projetos-img">
+                    <a href="https://ivanviana.com.br/projeto-igor/"><div class="projetos" id="projeto01">                
+                        <img src="projects/projeto-igor2.PNG" alt="Primeiro projeto">           
+                    </div></a>
+                    <a href="#"><div class="projetos" id="projeto02">
+                        
+                    </div></a>
+                    <a href="#"><div class="projetos" id="projeto03">
+                        
+                    </div></a>
+                    <a href="#"><div class="projetos" id="projeto04">
+                        
+                    </div></a>
+                    <a href="#"><div class="projetos" id="projeto05">
+                        
+                    </div></a>
+                </div>
+            </article>                      
         </section>
     </main>
     <footer>        
-        <section id="rodape">
-            <form action="#" method="post" id="contact">                
-                <label for="nome">Nome:</label>
-                <input type="text" size="20" maxlength="30" placeholder="Your Name">
-                <label for="assunto">Assunto:</label>
-                <input type="text" size="20" maxlength="50" placeholder="Your Subject">
-                <label for="email">E-mail:</label>
-                <input type="email" size="20" maxlength="50" placeholder="email@example.com">
-                <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" cols="30" rows="10" placeholder="Your message..."></textarea> 
-                <button type="submit">Enviar</button>
-            </form>            
-            <div id="rodape-sociais">
-                <h3>SOCIAL MEDIA</h3>
-                <a href="https://github.com/ivaraujo" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/ivan-viana-5395677b/" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">Youtube</a>
-                <a href="#" target="_blank">Instagram</a>
-            </div>
-            <div id="rodape-botoes">
-                <h3>MENU</h3>
-                <a href="index.html">Inicio</a>
-                <a href="#about">Sobre</a>
-                <a href="#portifolio">Projetos</a>
-            </div>
+        <section>            
+            <article id="rodape">
+                <form action="#" method="post" id="contact">                
+                    <label for="nome">Nome:</label>
+                    <input type="text" size="20" maxlength="30" placeholder="Your Name">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" size="20" maxlength="50" placeholder="Your Subject">
+                    <label for="email">E-mail:</label>
+                    <input type="email" size="20" maxlength="50" placeholder="email@example.com">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" cols="30" rows="10" placeholder="Your message..."></textarea> 
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="rodape-sociais">
+                    <h3>SOCIAL MEDIA</h3>
+                    <a href="https://github.com/ivaraujo" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ivan-viana-5395677b/" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Youtube</a>
+                    <a href="#" target="_blank">Instagram</a>
+                </div>
+                <div id="rodape-botoes">
+                    <h3>MENU</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#portifolio">Projetos</a>
+                </div>
+            </article>
         </section>        
         <div id="rodape-texto"><p>Copyright &#169 2022 Ivan Viana</p></div>    
     </footer>
