@@ -205,6 +205,7 @@ span{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    justify-items: center;
 }
 
 form{
@@ -271,8 +272,7 @@ form > button:hover{
 #rodape-botoes{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-items: center;
+    text-align: center;
 }
 
 #rodape-botoes > h3{
@@ -298,6 +298,7 @@ form > button:hover{
 #rodape-sociais{
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 #rodape-sociais > h3{
@@ -323,60 +324,48 @@ form > button:hover{
     color: rgb(241, 241, 12);
 }
 
-/*
+
 @media screen and (max-width: 780px){
+    header{
+        max-height: 600px;
+       } 
 
     section{
         width: 100%;
+    }  
+
+    #legenda{
+        height: 480px;
     }
 
-  
-
-   header{
-    max-height: 600px;
-   }
-
-  
-
-    #about{
-        display: flex;
+    #sobre{        
         flex-direction: column;        
     }    
 
-    #about-texto{
+    #sobre-texto{
+        width: 100%;
         border: 0px;
     }
 
     #skills{
+        width: 100%;
         flex-direction: column;
     }
-
     
-    #projetos > article{
+    #projetos-img{
         flex-direction: column;
     }
-
-    .projetos{
-        flex-direction: column;
+    
+    .projetos{        
         width: 150px;
         height: 150px;
     }
-       
 
     #rodape{
         flex-direction: column;
-    }
-
-    #rodape-sociais{
-        margin-top: 0px;
-    }
-
-    #rodape-sociais{
-        margin-top: 150px;
     }
 
     form{
         width: 100%;
     }
 }
-*/
