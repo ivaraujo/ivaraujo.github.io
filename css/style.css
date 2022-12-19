@@ -97,10 +97,12 @@ nav{
 }
 
 #legenda{
+    max-width: 1200px;
+    height: 800px;
+    margin: auto;
     display: flex;
     justify-content: start;
     justify-content: start;
-    height: 90%;
 }
 
 #legenda-texto{
