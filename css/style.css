@@ -66,7 +66,6 @@ article{
     height: 100%;  
     margin: auto;
     padding: 15px;
-    background-color: pink;
 }
 
 footer{
@@ -83,6 +82,7 @@ footer{
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    box-shadow: 0px 0px 30px #131313; 
 }
 
 nav{
@@ -100,7 +100,7 @@ nav{
     display: flex;
     justify-content: start;
     justify-content: start;
-    height: 100%;
+    height: 90%;
 }
 
 #legenda-texto{
@@ -112,7 +112,6 @@ nav{
     line-height: 40px;
     font-size: 1em;
     color: white;
-    background-color: red;
     padding: 15px;
 }
 
@@ -140,11 +139,9 @@ span{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    border-right: 1px solid rgba(114, 113, 113, 0.883);
     padding: 15px;
     width: 50%;
     height: 100%;
-    background-color: green;
 }
 
 #sobre-texto > h2{
@@ -163,9 +160,9 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 50%;
     height: 100%;
-    background-color: aqua;
 }
 
 #skills > div > h2{
@@ -173,13 +170,13 @@ span{
     font-size: 2em;
 }
 
-#skills-icons{
+#skills-icons > div{
     display: flex;
     flex-direction: row;
     padding: 15px;
 }
 
-#skills-icons > a > img{
+#skills-icons > div > a > img{
     max-width: 60px;
     background-color: white;
     padding: 10px;
@@ -189,6 +186,12 @@ span{
 
 #container-projetos{
     max-height: 800px;
+    background-image: url("../img/coding-924920_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;   
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 30px #131313; 
 }
 
 #projetos{
@@ -199,8 +202,7 @@ span{
     justify-content: center;
     color: rgb(241, 241, 12);
     padding: 15px;
-    border-bottom: 1px solid rgba(114, 113, 113, 0.883); 
-    background-color: purple;   
+    border-bottom: 1px solid rgba(114, 113, 113, 0.883);
 }
 
 #projetos-img{
@@ -229,17 +231,20 @@ span{
     background: transparent;
 }
 
-/* CONTAINER FOOTER */
-
-#container-rodape{
+#container-contato{
+    background-image: url("../img/cod_binario.png");
 }
 
-#rodape{
+#contato{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
+}
+
+#contato > h2{
+    font-size: 2em;
+    color: rgb(241, 241, 12);
+    border-bottom: 1px solid yellow;
 }
 
 form{
@@ -247,6 +252,7 @@ form{
     flex-direction: column;
     justify-items: flex-start;
     justify-content: center;
+    width: 50%;
     max-height: 100%;
     padding: 15px;
 }
@@ -287,8 +293,8 @@ form > textarea:focus{
 
 form > button{
     padding: 20px;
-    border: 2px solid rgb(241, 241, 12);
-    background: transparent;
+    border: 0px;
+    background-color: #131313;
     color: white;
     cursor: pointer;
     font-family: var(--texto);
@@ -303,9 +309,23 @@ form > button:hover{
     font-weight: bold;
 }
 
+/* CONTAINER FOOTER */
+
+#container-rodape{
+}
+
+#rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    height: 200px;
+}
+
 #rodape-botoes{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
 }
 
@@ -331,7 +351,7 @@ form > button:hover{
 
 #rodape-sociais{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
 }
 
@@ -345,16 +365,12 @@ form > button:hover{
 }
 
 #rodape-sociais > a:hover{  
-    color: rgb(241, 241, 12);  
-    border-bottom: 1px solid rgb(241, 241, 12);
-    border-radius: 10px;
+    color: rgb(241, 241, 12);
 }
 
 #rodape-texto{
-    width: 100%;
     text-align: center;
     padding: 20px;
-    border-top: 1px solid rgba(54, 54, 54, 0.883);
     color: rgb(241, 241, 12);
 }
 
