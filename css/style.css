@@ -183,7 +183,7 @@ span{
 .projetos{
     display: flex;
     flex-direction: row;
-    width: 150px;
+    width: 250px;
     height: 200px;
     border: 5px solid rgb(241, 241, 12);
     border-radius: 5px;
