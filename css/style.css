@@ -33,6 +33,7 @@ a{
     font-size: 1.5em;
     font-family: var(--titulo);
     padding: 10px;
+    transition: all 0.5s;
 }
 
 a:hover{
@@ -92,8 +93,9 @@ nav{
 }
 
 
-#cabecalho-botoes > a:hover{    
-    text-shadow: 0px 0px 10px white;
+#cabecalho-botoes > a:hover{ 
+    border-bottom: 1px solid rgb(241, 241, 12);
+    border-radius: 10px;
 }
 
 #legenda{
@@ -243,7 +245,7 @@ span{
 }
 
 #container-contato{
-    background-image: url("../img/cod_binario.png");
+    
 }
 
 #contato{
