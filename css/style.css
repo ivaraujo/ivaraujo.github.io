@@ -98,7 +98,7 @@ nav{
 
 #legenda{
     max-width: 1200px;
-    height: 800px;
+    height: 600px;
     margin: auto;
     display: flex;
     justify-content: start;
@@ -206,7 +206,7 @@ span{
     align-items: center;
     justify-items: center;
     justify-content: center;
-    color: rgb(241, 241, 12);
+    color: white;
     padding: 15px;
     border-bottom: 1px solid rgba(114, 113, 113, 0.883);
 }
@@ -254,8 +254,8 @@ span{
 
 #contato > h2{
     font-size: 2em;
-    color: rgb(241, 241, 12);
-    border-bottom: 1px solid yellow;
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 form{
