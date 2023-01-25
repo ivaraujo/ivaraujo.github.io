@@ -280,14 +280,16 @@ form > input{
     width: 100%;
     padding: 10px; 
     font-family: var(--texto);
-    font-size: 1em;    
-    border: 0px;
+    font-size: 1em;
+    border: 0px;    
+    border-radius: 16px;
     margin-bottom: 10px;
-    transition: all 0.5s;  
+    transition: all 0.5s;
+    outline: none;  
 }
 
 form > input:focus{
-    border-radius: 16px;
+    box-shadow: 0px 0px 10px white;
 }
 
 form > textarea{
@@ -295,13 +297,15 @@ form > textarea{
     padding: 10px; 
     font-family: var(--texto);
     font-size: 1em;
-    border: 0px;
+    border: 0px;    
+    border-radius: 16px;
     margin-bottom: 30px;
     transition: all 0.5s;
+    outline: none;
 }
 
 form > textarea:focus{
-    border-radius: 16px;
+    box-shadow: 0px 0px 10px white;
 }
 
 form > button{
@@ -313,13 +317,15 @@ form > button{
     font-family: var(--texto);
     font-size: 1em;
     transition: all 0.5s;
+    border: 2px solid black;
+    border-radius: 16px;
 }
 
 form > button:hover{
     background-color: rgb(241, 241, 12);
     color: #131313;
-    border-radius: 16px;
     font-weight: bold;
+    box-shadow: 0px 0px 10px white;
 }
 
 /* CONTAINER FOOTER */
