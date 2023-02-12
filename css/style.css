@@ -181,11 +181,13 @@ span{
     align-items: center;
     justify-content: center;
     width: 100%;
+    border-top: 1px solid #ccc;
 }
 
 #skills > div > h2{
     color: #003CC0;
     font-size: 2em;
+    margin-top: 80px;
 }
 
 #skills-icons > div{
