@@ -218,10 +218,9 @@ span{
     align-items: center;
     justify-items: center;
     justify-content: center;
-    color: red;
+    color: white;
     padding: 50px;
     border-bottom: 1px solid rgba(114, 113, 113, 0.883);
-    background-color: yellow;
 }
 
 #projetos-img{
