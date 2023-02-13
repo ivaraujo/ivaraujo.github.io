@@ -127,7 +127,6 @@ span{
 /* CONTAINER MAIN */
 
 #container-sobre{
-    max-height: 800px;
     padding: 30px;
 }
 
@@ -203,7 +202,6 @@ span{
 }
 
 #container-projetos{
-    max-height: 800px;
     background-image: url("../img/coding-924920_1920.jpg");
     background-repeat: no-repeat;
     background-position: center center;   
