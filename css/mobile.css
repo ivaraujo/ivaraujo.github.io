@@ -1,0 +1,60 @@
+
+@media screen and (max-width: 780px){
+    header{
+    } 
+
+    section{
+        width: 100%;
+    }
+    
+    #cabecalho-redes{
+        display: none;
+    }
+
+    #legenda{
+        height: 480px;
+    }
+
+    #sobre{        
+        flex-direction: column;        
+    }    
+
+    #sobre-texto{
+        width: 100%;
+        border: 0px;
+    }
+
+    #sobre-descricao{
+        flex-direction: column;
+    }    
+
+    #skills{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    #projetos-img{
+        flex-direction: column;
+    }
+    
+    .projetos{
+        justify-content: start;
+        width: 100%;
+        padding: 20px;
+        border-radius: 0px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.308);        
+    }
+
+    .projeto-caixa{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #rodape{
+        flex-direction: column;
+    }
+
+    form{
+        width: 100%;
+    }
+}
