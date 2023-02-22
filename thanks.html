@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon-logotipo.ico" type="image/x-icon">
+    <title>Ivan Viana | Agradecimento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        main{
+            padding: 30px;
+        }
+        #msg{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        #msg h1{
+            color: white;
+        }
+        #msg h2{
+            font-size: 1.5em;
+            color: white;
+        }
+        #foto{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: url(img/Ivan_topo_preto6.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="msg">
+            <div id="foto"></div>
+            <h1>Obrigado pelo contato!</h1>
+            <h2>Logo entrarei em contato.</h2>
+            <script>
+                setTimeout(function(){
+                    window.location = 'index.html';
+                },8000);                
+            </script>
+        </div>        
+    </main>        
+</body>
+</html>
