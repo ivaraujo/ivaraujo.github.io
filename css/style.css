@@ -137,7 +137,6 @@ span{
     justify-items: center;
     padding: 30px;
     border-radius: 5px;
-    background-color: white;
 }
 
 #sobre-descricao{
@@ -145,8 +144,9 @@ span{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 15px;
+    padding: 20px;
     width: 100%;
+    height: 400px;
 }
 
 #sobre-descricao > h2{
@@ -165,11 +165,14 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    padding: 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
 }
 
 .sobre-elementos{
-    color: #003CC0;
+    color: white;
     padding: 20px;
 }
 
@@ -180,33 +183,39 @@ span{
     justify-content: center;
     width: 100%;
     padding: 50px;
-    border-top: 1px solid #ccc;
 }
 
 #skills > div > h2{
-    color: #003CC0;
+    color: white;
     font-size: 2em;
+}
+
+#skills-icons{
+    display: flex;
+    flex-direction: row;
 }
 
 #skills-icons > div{
     display: flex;
     flex-direction: row;
-    padding: 15px;
 }
 
 #skills-icons > div > a > img{
     max-width: 60px;
-    background-color: white;
     padding: 10px;
+    border-radius: 15px;
+    background-color: white;
 }
 
 #container-projetos{
-    background-image: url("../img/coding-924920_1920.jpg");
+    /*background-image: url("../img/coding-924920_1920.jpg");
     background-repeat: no-repeat;
     background-position: center center;   
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: 0px 0px 30px #040505; 
+    box-shadow: 0px 0px 30px #040505; */
+    background-color: white;
+    padding: 30px;
 }
 
 #projetos{
@@ -242,10 +251,10 @@ span{
     align-items: center;
     justify-content: center;
     width: 450px;
-    border: 5px solid white;
-    border-radius: 5px;
+    padding: 20px;
+    border: 4px solid #ccc;
+    border-radius: 15px;
     transition: all 0.5s;
-    background-color: white;
 }
 
 .projetos > img{ 
@@ -256,12 +265,15 @@ span{
 
 .projetos h2{
     width: 100%;
+    padding: 10px;
     font-size: 1.5em;
     color: #003CC0;
 }
 
 .projetos p{
     width: 100%;
+    padding: 10px;
+    text-align: justify;
     color: #040505;
 }
 
@@ -279,7 +291,7 @@ span{
 }
 
 #container-contato{
-    
+    padding: 30px;    
 }
 
 #contato{
@@ -291,7 +303,6 @@ span{
 #contato > h2{
     font-size: 2em;
     color: white;
-    border-bottom: 1px solid white;
 }
 
 form{
@@ -299,9 +310,11 @@ form{
     flex-direction: column;
     justify-items: flex-start;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     max-height: 100%;
-    padding: 15px;
+    padding: 30px;
+    border: 3px solid white;
+    border-radius: 15px;
 }
 
 form > label{
@@ -319,7 +332,6 @@ form > input{
     border-radius: 16px;
     margin-bottom: 10px;
     transition: all 0.5s;
-    outline: none;  
 }
 
 form > input:focus{
@@ -335,7 +347,6 @@ form > textarea{
     border-radius: 16px;
     margin-bottom: 30px;
     transition: all 0.5s;
-    outline: none;
 }
 
 form > textarea:focus{
@@ -351,7 +362,6 @@ form > button{
     font-family: var(--texto);
     font-size: 1em;
     transition: all 0.5s;
-    border: 2px solid black;
     border-radius: 16px;
 }
 
@@ -359,7 +369,6 @@ form > button:hover{
     background-color: rgb(241, 241, 12);
     color: #131313;
     font-weight: bold;
-    box-shadow: 0px 0px 10px white;
 }
 
 /* CONTAINER FOOTER */

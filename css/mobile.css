@@ -32,6 +32,10 @@
         width: 100%;
         flex-direction: column;
     }
+
+    #skills-icons{
+        flex-direction: column;
+    }
     
     #projetos-img{
         flex-direction: column;
@@ -56,5 +60,6 @@
 
     form{
         width: 100%;
+        border: 0px;
     }
 }
