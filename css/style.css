@@ -239,6 +239,11 @@ span{
     width: 100%;
 }
 
+#projeto-btn{
+    text-align: right;
+    width: 100%;
+}
+
 .projeto-caixa{
     display: flex;
     flex-direction: row;
@@ -253,17 +258,18 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 450px;
+    width: 80%;
+    height: 600px;
     padding: 20px;
     border: 4px solid #ccc;
     border-radius: 15px;
     transition: all 0.5s;
 }
 
-.projetos > img{ 
+.projetos img{ 
     width: 100%;
     max-width: 250px;
-    max-height: 150px;
+    height: 70%;
 }
 
 .projetos h2{
@@ -276,21 +282,17 @@ span{
 .projetos p{
     width: 100%;
     padding: 10px;
+    font-size: 1em;
     text-align: justify;
     color: #040505;
 }
 
 .projetos a{
     font-size: 1em;
-    color: white;
-    border: 1px solid #003CC0;
     background-color: #003CC0;
+    color: white;
     border-radius: 10px;
     transition: all 0.5s;
-}
-
-.projetos a:hover{
-    color: rgb(241, 241, 12);
 }
 
 #container-contato{
