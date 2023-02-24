@@ -224,8 +224,11 @@ span{
     align-items: center;
     justify-items: center;
     justify-content: center;
-    color: white;
     width: 100%;
+}
+
+#projetos h2{
+    color: #003CC0;
 }
 
 #projetos-img{
