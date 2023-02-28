@@ -231,7 +231,7 @@ span{
     color: #003CC0;
 }
 
-#projetos-img{
+#projetos-caixa{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,19 +257,24 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     width: 80%;
     height: 600px;
-    padding: 20px;
     border: 4px solid #ccc;
-    border-radius: 15px;
+    border-radius: 1px;
     transition: all 0.5s;
 }
 
-.projetos img{ 
+.imagem{
+    background: url(../projects/igor-gastro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#projeto-conteudo{
     width: 100%;
-    max-width: 250px;
-    height: 70%;
+    padding: 20px;
 }
 
 .projetos h2{
