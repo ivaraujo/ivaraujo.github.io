@@ -24,8 +24,13 @@ body{
     width: 100%;
     min-height: 100vh;
     font-family: var(--padrao);
-    background-color: #003CC0;
+    /*background-color: #003CC0;*/
     background-repeat: no-repeat;
+    background-image: url(../img/Ivan_topo_preto6.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 a{
@@ -50,15 +55,19 @@ p{
 }
 
 header{
-    width: 100%;   
+    width: 100%;
+    position: relative;   
 }
 
 main{
     width: 100%;
+    height: 100vh;
 }
 
 section{    
     width: 100%;
+    height: 100vh;
+    position: absolute;  
 }
 
 article{
@@ -76,20 +85,16 @@ footer{
 
 /* CONTAINER HEADER */
 
-#container-header{
-    background-image: url(../img/Ivan_topo_preto6.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    box-shadow: 0px 0px 30px #040505;
-    height: 100vh;
+#container-header{    
+    /*box-shadow: 0px 0px 30px #040505;*/
 }
 
 nav{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     padding: 15px;
+    width: 100%;
 }
 
 
@@ -98,9 +103,20 @@ nav{
     border-radius: 10px;
 }
 
+/* CONTAINER MAIN */
+
+#container-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    justify-items: start;
+    width: 100%;
+    height: 100vh;
+}
+
 #legenda{
-    max-width: 1200px;
-    height: 600px;
+    width: 100%;
+    height: 90vh;
     margin: auto;
     display: flex;
     justify-content: start;
@@ -124,10 +140,9 @@ span{
     font-size: 2em;
 }
 
-/* CONTAINER MAIN */
-
 #container-sobre{
     padding: 30px;
+    opacity: 0;
 }
 
 #sobre{
@@ -217,6 +232,7 @@ span{
     box-shadow: 0px 0px 30px #040505; */
     background-color: white;
     padding: 30px;
+    opacity: 0;
 }
 
 #projetos{
@@ -302,7 +318,8 @@ span{
 }
 
 #container-contato{
-    padding: 30px;    
+    padding: 30px;
+    opacity: 0; 
 }
 
 #contato{

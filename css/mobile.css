@@ -9,11 +9,7 @@
     
     #cabecalho-redes{
         display: none;
-    }
-
-    #legenda{
-        height: 480px;
-    }
+    }  
 
     #sobre{        
         flex-direction: column;        
