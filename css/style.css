@@ -24,7 +24,6 @@ body{
     width: 100%;
     min-height: 100vh;
     font-family: var(--padrao);
-    /*background-color: #003CC0;*/
     background-repeat: no-repeat;
     background-image: url(../img/Ivan_topo_preto6.png);
     background-repeat: no-repeat;
@@ -85,7 +84,7 @@ footer{
 /* CONTAINER HEADER */
 
 #container-header{    
-    /*box-shadow: 0px 0px 30px #040505;*/
+    
 }
 
 nav{
