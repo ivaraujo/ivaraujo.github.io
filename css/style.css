@@ -263,9 +263,19 @@ span{
 .descricao-projetos{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    justify-content: center;
+    width: 50%;
     height: 100%;
     padding: 15px;
+}
+
+.direita{
+    text-align: right;
+    align-items: end;
+}
+.esquerda{
+    text-align: left;
+    align-items: start;
 }
 
 .tecnologia-projetos{
@@ -282,11 +292,14 @@ span{
 }
 
 .imagem-projetos{
-    width: 70%;
+    width: 50%;
+    padding: 20px;
+    background-color: red;
 }
 
 .caixa-projetos img{
     max-width: 400px;
+    border: 1px solid var(--preto);
 }
 
 
