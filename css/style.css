@@ -8,6 +8,10 @@
     --titulo: 'Teko', sans-serif;
     --texto: 'Ubuntu Mono', monospace;
     --padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --azul: #003CC0;
+    --preto: #040505;
+    --amarelo: rgb(241, 241, 12);
+    --branco: white;
 }
 
 
@@ -27,7 +31,7 @@ body{
 }
 
 a{
-    color: #003CC0;
+    color: var(--preto);
     font-size: 1.5em;
     font-family: var(--titulo);
     padding: 10px;
@@ -35,13 +39,13 @@ a{
 }
 
 a:hover{
-    color: rgb(241, 241, 12);
+    color: var(--azul);
 }
 
 h1,h2,h3{
     font-family: var(--titulo);
     font-size: 2em;
-    color: #003CC0;
+    color: var(--preto)
    }
    
 p{
@@ -50,7 +54,7 @@ p{
 }
 
 button{
-    color: white;
+    color: var(--branco);
 }
 
 header{
@@ -59,6 +63,10 @@ header{
 
 main{
     width: 100%;
+}
+
+main h2{
+    font-size: 4em;
 }
 
 section{    
@@ -75,7 +83,7 @@ article{
 footer{
     width: 100%;  
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: #040505;
+    background-color: var(--preto);
 }
 
 /* CONTAINER HEADER */
@@ -91,12 +99,12 @@ nav{
     padding: 15px;
     width: 100%;
     position: fixed;
-    background-color: white;
+    background-color: var(--branco);
 }
 
 
 #cabecalho-botoes > a:hover{ 
-    border-bottom: 1px solid rgb(241, 241, 12);
+    border-bottom: 1px solid var(--azul);
     border-radius: 10px;
 }
 
@@ -126,7 +134,7 @@ nav{
 }
 
 span{    
-    color: rgb(241, 241, 12);
+    color: var(--amarelo);
     font-size: 2em;
 }
 
@@ -135,6 +143,7 @@ span{
     align-items: center;
     width: 500px;
     height: 500px;
+    border: 5px solid #040505;
     border-radius: 50%;
     background: url(../img/Ivan_topo_preto6.png);
     background-position: center center;
@@ -151,7 +160,6 @@ span{
 #container-sobre{
     padding: 30px;
     height: 100vh;
-    background-color: #040505;
 }
 
 #sobre{
@@ -172,11 +180,11 @@ span{
 }
 
 .descricao-sobre p{
-    color: white;
+    
 }
 
 .descricao-sobre h2{
-    color: white;
+    
 }
 
 #skills-sobre{
@@ -225,7 +233,22 @@ span{
 .caixas-projetos{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
+}
+
+.caixas-projetos button{
+    background-color: var(--azul);
+    border: 0px;
+    border-radius: 3px;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.caixas-projetos button:hover{
+    background-color: var(--amarelo);
+    color: var(--preto);
 }
 
 .caixa-projetos{
@@ -251,10 +274,11 @@ span{
 }
 
 .tecnologia-projetos p{
-    padding: 10px;
+    padding: 5px;
+    border-radius: 8px;
     margin: 5px;
-    background-color: #003CC0;
-    color: white;
+    background-color: lightgray;
+    color: gray;
 }
 
 .imagem-projetos{
@@ -265,84 +289,6 @@ span{
     max-width: 400px;
 }
 
-
-/* CONTATO */
-
-#container-contato{
-    padding: 30px;
-}
-
-#contato{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contato > h2{
-    font-size: 2em;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-    justify-content: center;
-    width: 70%;
-    max-height: 100%;
-    padding: 30px;
-}
-
-form > label{
-    font-size: 1.2em;
-    margin-bottom: 10px; 
-}
-
-form > input{
-    width: 100%;
-    padding: 10px; 
-    font-family: var(--texto);
-    font-size: 1em;
-    border: 0px;    
-    border-radius: 16px;
-    margin-bottom: 10px;
-    transition: all 0.5s;
-}
-
-form > input:focus{
-    box-shadow: 0px 0px 10px white;
-}
-
-form > textarea{
-    width: 100%;
-    padding: 10px; 
-    font-family: var(--texto);
-    font-size: 1em;
-    border: 0px;    
-    border-radius: 16px;
-    margin-bottom: 30px;
-    transition: all 0.5s;
-}
-
-form > textarea:focus{
-    box-shadow: 0px 0px 10px white;
-}
-
-form > button{
-    padding: 20px;
-    border: 0px;
-    background-color: #040505;
-    cursor: pointer;
-    font-family: var(--texto);
-    font-size: 1em;
-    transition: all 0.5s;
-    border-radius: 16px;
-}
-
-form > button:hover{
-    background-color: rgb(241, 241, 12);
-    color: #131313;
-    font-weight: bold;
-}
 
 /* CONTAINER FOOTER */
 
