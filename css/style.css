@@ -24,16 +24,10 @@ body{
     width: 100%;
     min-height: 100vh;
     font-family: var(--padrao);
-    background-repeat: no-repeat;
-    background-image: url(../img/Ivan_topo_preto6.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 a{
-    color: white;
+    color: #003CC0;
     font-size: 1.5em;
     font-family: var(--titulo);
     padding: 10px;
@@ -47,20 +41,25 @@ a:hover{
 h1,h2,h3{
     font-family: var(--titulo);
     font-size: 2em;
+    color: #003CC0;
    }
    
 p{
     font-family: var(--texto);
+    color: #131313;
+}
+
+button{
+    color: white;
 }
 
 header{
-    width: 100%;
-    position: relative;   
+    width: 100%;   
 }
 
 main{
     width: 100%;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 section{    
@@ -93,6 +92,8 @@ nav{
     justify-content: space-around;
     padding: 15px;
     width: 100%;
+    position: fixed;
+    background-color: white;
 }
 
 
@@ -125,10 +126,8 @@ nav{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    text-shadow: 0px 0px 10px black;
     line-height: 40px;
     font-size: 1em;
-    color: white;
     padding: 15px;
 }
 
@@ -139,7 +138,6 @@ span{
 
 #container-sobre{
     padding: 30px;
-    display: none;
 }
 
 #sobre{
@@ -163,12 +161,10 @@ span{
 }
 
 #sobre-descricao > h2{
-    color: #003CC0;
     font-size: 2em;
 }
 
-#sobre-descricao > p{
-    color: #040505;
+#sobre-descricao > p{    
     text-align: center;
     font-size: 1.5em;
 }
@@ -179,13 +175,9 @@ span{
     justify-content: center;
     align-items: center;
     padding: 30px;
-    color: white;
-    border: 2px solid white;
-    border-radius: 15px;
 }
 
 .sobre-elementos{
-    color: white;
     padding: 20px;
 }
 
@@ -199,7 +191,6 @@ span{
 }
 
 #skills > div > h2{
-    color: white;
     font-size: 2em;
 }
 
@@ -217,19 +208,13 @@ span{
     max-width: 60px;
     padding: 10px;
     border-radius: 15px;
-    background-color: white;
 }
 
-#container-projetos{
-    /*background-image: url("../img/coding-924920_1920.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;   
-    background-size: cover;
-    background-attachment: fixed;
-    box-shadow: 0px 0px 30px #040505; */
+#container-projetos{    
     padding: 30px;
-    display: none;
 }
+
+/* PROJETOS */
 
 #projetos{
     display: flex;
@@ -241,7 +226,6 @@ span{
 }
 
 #projetos h2{
-    color: #003CC0;
 }
 
 #projetos-caixa{
@@ -290,32 +274,12 @@ span{
     padding: 20px;
 }
 
-.projetos h2{
-    width: 100%;
-    padding: 10px;
-    font-size: 1.5em;
-    color: #003CC0;
-}
 
-.projetos p{
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    text-align: justify;
-    color: #040505;
-}
 
-.projetos a{
-    font-size: 1em;
-    background-color: #003CC0;
-    color: white;
-    border-radius: 10px;
-    transition: all 0.5s;
-}
+/* CONTATO */
 
 #container-contato{
     padding: 30px;
-    display: none;
 }
 
 #contato{
@@ -326,7 +290,6 @@ span{
 
 #contato > h2{
     font-size: 2em;
-    color: white;
 }
 
 form{
@@ -340,7 +303,6 @@ form{
 }
 
 form > label{
-    color: white;
     font-size: 1.2em;
     margin-bottom: 10px; 
 }
@@ -379,7 +341,6 @@ form > button{
     padding: 20px;
     border: 0px;
     background-color: #040505;
-    color: white;
     cursor: pointer;
     font-family: var(--texto);
     font-size: 1em;
@@ -455,6 +416,9 @@ form > button:hover{
 #rodape-texto{
     text-align: center;
     padding: 20px;
+}
+
+#rodape-texto p{
     color: white;
 }
 
