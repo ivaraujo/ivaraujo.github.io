@@ -59,12 +59,10 @@ header{
 
 main{
     width: 100%;
-    /*height: 100vh;*/
 }
 
 section{    
-    width: 100%;
-    height: 100vh;  
+    width: 100%;  
 }
 
 article{
@@ -104,28 +102,24 @@ nav{
 
 /* CONTAINER MAIN */
 
+/* TITULO */
+
 #container-titulo{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    justify-items: start;
-    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
     height: 100vh;
+    margin: 0 auto;
 }
 
-#legenda{
-    width: 1200px;
-    height: 90vh;
-    margin: auto;
-    display: flex;
-    justify-content: start;
+#legenda{    
 }
 
 #legenda-texto{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
     line-height: 40px;
     font-size: 1em;
     padding: 15px;
@@ -136,8 +130,28 @@ span{
     font-size: 2em;
 }
 
+#imagem-titulo{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: url(../img/Ivan_topo_preto6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#imagem-titulo img{
+    
+}
+
+/* SOBRE */
+
 #container-sobre{
     padding: 30px;
+    height: 100vh;
+    background-color: #040505;
 }
 
 #sobre{
@@ -150,71 +164,54 @@ span{
     border-radius: 5px;
 }
 
-#sobre-descricao{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-    width: 100%;
-    height: 400px;
-}
-
-#sobre-descricao > h2{
-    font-size: 2em;
-}
-
-#sobre-descricao > p{    
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.sobre-conteudo{
+.descricao-sobre{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
 }
 
-.sobre-elementos{
-    padding: 20px;
+.descricao-sobre p{
+    color: white;
 }
 
-#skills{
+.descricao-sobre h2{
+    color: white;
+}
+
+#skills-sobre{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 50px;
 }
 
-#skills > div > h2{
+#skills-sobre > div > h2{
     font-size: 2em;
 }
 
-#skills-icons{
+#icons-skills{
     display: flex;
     flex-direction: row;
 }
 
-#skills-icons > div{
+#icons-skills > div{
     display: flex;
     flex-direction: row;
 }
 
-#skills-icons > div > a > img{
+#icons-skills > div > a > img{
     max-width: 60px;
     padding: 10px;
     border-radius: 15px;
 }
 
-#container-projetos{    
-    padding: 30px;
-}
-
 /* PROJETOS */
+
+#container-projetos{    
+    
+}
 
 #projetos{
     display: flex;
@@ -225,55 +222,48 @@ span{
     width: 100%;
 }
 
-#projetos h2{
-}
-
-#projetos-caixa{
+.caixas-projetos{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
     width: 100%;
 }
 
-#projeto-btn{
-    text-align: right;
-    width: 100%;
-}
-
-.projeto-caixa{
+.caixa-projetos{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    padding: 0px 0px 10px 0px;
+    width: 100%;
+    padding: 10px;
 }
-
-.projetos{
+.descricao-projetos{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    width: 80%;
-    height: 600px;
-    border: 4px solid #ccc;
-    border-radius: 1px;
-    transition: all 0.5s;
+    width: 30%;
+    height: 100%;
+    padding: 15px;
 }
 
-.imagem{
-    background: url(../projects/igor-gastro.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.tecnologia-projetos{
+    display: flex;
+    flex-direction: row;
 }
 
-#projeto-conteudo{
-    width: 100%;
-    padding: 20px;
+.tecnologia-projetos p{
+    padding: 10px;
+    margin: 5px;
+    background-color: #003CC0;
+    color: white;
 }
 
+.imagem-projetos{
+    width: 70%;
+}
+
+.caixa-projetos img{
+    max-width: 400px;
+}
 
 
 /* CONTATO */
