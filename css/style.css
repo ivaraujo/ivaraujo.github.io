@@ -183,14 +183,6 @@ span{
     align-items: center;
 }
 
-.descricao-sobre p{
-    
-}
-
-.descricao-sobre h2{
-    
-}
-
 #skills-sobre{
     display: flex;
     flex-direction: column;
@@ -220,10 +212,6 @@ span{
 }
 
 /* PROJETOS */
-
-#container-projetos{    
-    
-}
 
 #projetos{
     display: flex;
@@ -262,7 +250,7 @@ span{
     align-items: center;
     width: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
 }
 .descricao-projetos{
     display: flex;
@@ -280,6 +268,11 @@ span{
 .esquerda{
     text-align: left;
     align-items: start;
+}
+
+.bordas{    
+    border-bottom: 1px solid lightgray;
+    border-
 }
 
 .tecnologia-projetos{
@@ -308,9 +301,6 @@ span{
 
 
 /* CONTAINER FOOTER */
-
-#container-rodape{
-}
 
 #rodape{
     display: flex;
