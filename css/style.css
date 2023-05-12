@@ -74,13 +74,13 @@ main h2{
 }
 
 section{    
-    width: 100%;  
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;  
 }
 
-article{
-    max-width: 1200px;
-    height: 100%;  
-    margin: auto;
+article{    
+    height: 100%;
     padding: 15px;
 }
 
@@ -94,6 +94,10 @@ footer{
 
 #container-header{    
     
+}
+
+#cabecalho-redes-mobile{
+    display: none;
 }
 
 nav{
@@ -120,8 +124,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    width: 1200px;
+    align-items: center;    
     height: 100vh;
     margin: 0 auto;
 }
@@ -145,8 +148,10 @@ span{
 #imagem-titulo{
     display: flex;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 400px;
     border: 5px solid #040505;
     border-radius: 50%;
     background: url(../img/Ivan_topo_preto6.png);
@@ -364,4 +369,12 @@ span{
     color: white;
 }
 
+/* SCROLLBAR */
 
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--preto);    
+}

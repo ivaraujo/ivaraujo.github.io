@@ -10,13 +10,24 @@
     #cabecalho-redes{
         display: none;
     }
+
+    #cabecalho-redes-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #cabecalho-redes-mobile a{
+        color: white;
+    }
     
     #container-titulo{
         width: 100%;
         height: 100vh;
         flex-direction: column;
         background: url(../img/Ivan_topo_preto6.png);
-        background-position: center;
+        background-position: top center;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
