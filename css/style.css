@@ -303,6 +303,18 @@ span{
     border: 1px solid var(--preto);
 }
 
+.botao-repositorio{
+    align-items: center;
+    margin-top: 10px;
+    padding: 3px;
+    background-color: var(--preto);
+    border-radius: 8px;
+}
+
+.botao-repositorio a{
+    font-size: 11pt;
+    color: var(--branco);
+}
 
 /* CONTAINER FOOTER */
 
