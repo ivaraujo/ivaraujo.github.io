@@ -12,6 +12,7 @@
     --preto: #040505;
     --amarelo: rgb(241, 241, 12);
     --branco: white;
+    --cinza: lightgray;
 }
 
 
@@ -35,7 +36,7 @@ body{
 }
 
 a{
-    color: var(--preto);
+    color: var(--cinza);
     font-size: 1.5em;
     font-family: var(--titulo);
     padding: 10px;
@@ -43,18 +44,18 @@ a{
 }
 
 a:hover{
-    color: var(--azul);
+    color: var(--amarelo);
 }
 
 h1,h2,h3{
     font-family: var(--titulo);
     font-size: 2em;
-    color: var(--preto)
+    color: var(--cinza)
    }
    
 p{
     font-family: var(--texto);
-    color: #131313;
+    color: var(--cinza);
 }
 
 button{
@@ -67,6 +68,7 @@ header{
 
 main{
     width: 100%;
+    background-color: var(--preto);
 }
 
 main h2{
@@ -107,12 +109,12 @@ nav{
     padding: 15px;
     width: 100%;
     position: fixed;
-    background-color: var(--branco);
+    background-color: var(--preto);
 }
 
 
 #cabecalho-botoes > a:hover{ 
-    border-bottom: 1px solid var(--azul);
+    border-bottom: 1px solid var(--amarelo);
     border-radius: 10px;
 }
 
@@ -245,7 +247,7 @@ span{
 
 .caixas-projetos button:hover{
     background-color: var(--amarelo);
-    color: var(--preto);
+    color: red;
 }
 
 .caixa-projetos{
@@ -295,7 +297,6 @@ span{
 .imagem-projetos{
     width: 50%;
     padding: 20px;
-    background-color: red;
 }
 
 .caixa-projetos img{
@@ -307,13 +308,13 @@ span{
     align-items: center;
     margin-top: 10px;
     padding: 3px;
-    background-color: var(--preto);
+    border: 1px solid;
+    border-color: var(--cinza);
     border-radius: 8px;
 }
 
 .botao-repositorio a{
-    font-size: 11pt;
-    color: var(--branco);
+    font-size: 11pt;    
 }
 
 /* CONTAINER FOOTER */
@@ -375,10 +376,6 @@ span{
 #rodape-texto{
     text-align: center;
     padding: 20px;
-}
-
-#rodape-texto p{
-    color: white;
 }
 
 /* SCROLLBAR */
