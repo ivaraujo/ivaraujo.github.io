@@ -9,7 +9,7 @@
     --texto: 'Ubuntu Mono', monospace;
     --padrao: Verdana, Geneva, Tahoma, sans-serif;
     --azul: #003CC0;
-    --preto: #040505;
+    --preto: #141414;
     --amarelo: rgb(241, 241, 12);
     --branco: white;
     --cinza: lightgray;
@@ -384,9 +384,10 @@ span{
 /* SCROLLBAR */
 
 ::-webkit-scrollbar{
-    width: 12px;
+    width: 15px;
+    background-color: var(--preto);
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--preto);    
+    background-color: var(--cinza);    
 }
