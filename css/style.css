@@ -289,8 +289,9 @@ span{
 .tecnologia-projetos p{
     padding: 5px;
     border-radius: 8px;
+    font-size: 8pt;
+    background-color: var(--cinza);
     margin: 5px;
-    background-color: lightgray;
     color: gray;
 }
 
@@ -306,17 +307,17 @@ span{
 
 .botao-projetos{
     display: flex;
-    
-    align-items: center;
+    flex-direction: row;
+    align-items: start;
     margin-top: 10px;
-    padding: 3px;
-    border: 1px solid;
-    border-color: var(--cinza);
-    border-radius: 8px;
 }
 
 .botao-projetos a{
-    font-size: 11pt;    
+    font-size: 11pt;
+    margin-left: 10px;
+    border: 1px solid;
+    border-color: var(--cinza);
+    border-radius: 8px;   
 }
 
 /* CONTAINER FOOTER */
