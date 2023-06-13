@@ -39,9 +39,7 @@
 
     #legenda-texto h1{
         color: var(--branco);
-    }
-
-    
+    }    
 
     #imagem-titulo{
         display: none;
@@ -58,8 +56,26 @@
     #rodape{
         flex-direction: column;
     }
+
+    .caixa-projetos{
+        flex-direction: column;
+    }
     
-    .caixa-projetos img{
-        max-width: 100px;
+    .caixa-projetos img{        
+        width: 100%;
+    }
+
+    .descricao-projetos{
+        width: 100%;
+        text-align: left;
+    }
+    
+    .direita{
+        align-items: start;
+        text-align: left;
+    }
+
+    .reverso{
+        flex-direction: column-reverse;
     }
 }
