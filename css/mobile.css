@@ -5,11 +5,8 @@
 
     section{
         width: 100%;
-    }
+    }  
     
-    #cabecalho-redes{
-        display: none;
-    }
 
     #cabecalho-redes-mobile{
         display: flex;
@@ -17,33 +14,23 @@
         justify-content: space-around;
         align-items: center;
     }
-
-    #cabecalho-redes-mobile a{
-        color: white;
-    }
-    
+       
     #container-titulo{
         width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        background: url(../img/Ivan_topo_preto6.png);
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        flex-direction: column-reverse;
     }
 
     #legenda-texto{
         display: flex;
-        margin-top: 60vh;
+       /* margin-top: 60vh;*/
     }
 
     #legenda-texto h1{
-        color: var(--branco);
     }    
 
     #imagem-titulo{
-        display: none;
-    }
+        width: 100%;
+     }
 
     #sobre{        
         flex-direction: column;        
