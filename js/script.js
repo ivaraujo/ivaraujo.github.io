@@ -22,11 +22,15 @@ function toggleMode(){
     const html = document.documentElement;
 
     html.classList.toggle('light');
+}
 
-    if(html.classList.contains('light')){
-        
+//Menu
+
+function clickMenu(){
+    if(botoesMenu.style.display == 'block'){
+        botoesMenu.style.display = 'none';
     }
     else{
-        
+        botoesMenu.style.display = 'block';
     }
 }

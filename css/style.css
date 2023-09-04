@@ -147,6 +147,28 @@ nav{
     flex-direction: row;
     justify-content: space-around;
 }
+
+#botoesMenu{
+    display: flex;
+    align-items: center;
+}
+
+#botoesMenu a{
+    display: block;    
+    border: 1px transparent;
+}
+
+#botoesMenu a:hover{ 
+    border-bottom: 1px solid var(--amarelo);
+    border-radius: 10px;
+}
+
+#menu{
+    display: none;
+    text-align: center;
+    background-color:var(--cinza-escuro);
+}
+
 /*switch*/
 #switch{
     position: relative;
@@ -180,10 +202,6 @@ nav{
     border-radius: 9999px;
 }
 
-#cabecalho-botoes > a:hover{ 
-    border-bottom: 1px solid var(--amarelo);
-    border-radius: 10px;
-}
 
 /* CONTAINER MAIN */
 

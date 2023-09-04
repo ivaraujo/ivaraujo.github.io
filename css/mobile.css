@@ -1,19 +1,40 @@
 
 @media screen and (max-width: 780px){
-    header{
+    #container-header{        
+        flex-direction: column;
+    }
+    
+    nav{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #botoesMenu {
+        display: none;
+        text-align: center;
+    }
+
+    #botoesMenu a{
+        border:0;
+    }
+
+    #botoesMenu a:hover{
+        border: none;
+        border-radius: none;
+    }
+
+    
+    #menu{
+       display: block;
     } 
 
     section{
         width: 100%;
     }  
     
-
-    #cabecalho-redes-mobile{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
+    #switch{
+        margin-top: 10px;
+    }   
        
     #container-titulo{
         width: 100%;
