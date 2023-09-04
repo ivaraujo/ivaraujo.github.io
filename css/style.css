@@ -86,7 +86,7 @@ p{
 button{}
 
 header{
-    width: 100%;   
+    width: 100%;  
 }
 
 main{
@@ -116,17 +116,27 @@ footer{
 
 /* CONTAINER HEADER */
 
-#container-header{
+#container-header{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
 }
 
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 15px;
-    width: 100%;
 }
-
+#switch{
+    background-color: blue;
+    height: 30px;
+    width: 100px;
+}
 
 #cabecalho-botoes > a:hover{ 
     border-bottom: 1px solid var(--amarelo);
@@ -143,6 +153,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    height: 100vh;
 }
 
 #container-titulo span{ 
@@ -251,7 +262,6 @@ span{
 }
 
 .caixas-projetos button{
-    background-color: var(--azul);
     border: 0px;
     border-radius: 3px;
     width: 100px;
@@ -270,14 +280,24 @@ span{
     justify-content: center;
     align-items: center;
     width: 100%;
-    width: 100%;
+    margin-top: 30px;
+    padding: 10px 0px;
 }
+
+.caixa-projetos img{
+    max-width: 100%;
+    width: 400px;
+    border: 0;
+    border-radius: 5px;
+}
+
 .descricao-projetos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
     height: 100%;
+    padding: 0 10px;
 }
 
 .direita{
@@ -290,7 +310,7 @@ span{
 }
 
 .bordas{    
-    border-bottom: 1px solid lightgray;
+    
 }
 
 .tecnologia-projetos{
@@ -309,11 +329,6 @@ span{
 
 .imagem-projetos{
     width: 50%;
-}
-
-.caixa-projetos img{
-    max-width: 400px;
-    border: 1px solid var(--preto);
 }
 
 .botao-projetos{
@@ -339,12 +354,40 @@ span{
     justify-content: space-around;
     align-items: center;
     justify-items: center;
-    height: 200px;
 }
 
 #rodape-texto{
     text-align: center;
     padding: 20px;
+}
+
+/* BUTTON TOPO*/
+
+#btn-topo{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cinza);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow{
+    border: solid var(--cinza-escuro);
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }
 
 /* SCROLLBAR */
