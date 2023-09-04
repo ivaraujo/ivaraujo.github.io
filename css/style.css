@@ -14,6 +14,9 @@
     --branco: white;
     --cinza: lightgray;
     --cinza-escuro:gray;
+    --switch-bg: url(../assets/moon-stars.svg);
+    --surface-color: rgba(211, 211, 211, 0.205);
+    --stroke-color: rgba(128, 128, 128, 0.342);
 }
 
 
@@ -32,24 +35,39 @@ html{
 
 /* Light Mode */
 
-#light{
+.light{
     background-color: var(--branco);
     color: var(--preto);
+    --switch-bg: url(../assets/sun.svg);
 }
-#light a{
+.light a{
     color: var(--preto);
     border: 0px;
     border-radius: none;
 }
-#light a:hover{
+.light a:hover{
     color: var(--amarelo);    
 }
 
-#light h1{
+.light h1{
     color: var(--cinza-escuro);
 }
-#light p{
+.light p{
     color: var(--preto);
+}
+
+.light .caixa-projetos a{
+    background-color: var(--preto);
+    color: var(--cinza);
+}
+
+.light .tecnologia-projetos p{
+    color: var(--cinza);
+}
+
+.light #switch button{
+    right: 0;
+    left: initial;
 }
 
 /* CONF GERAIS */
@@ -82,8 +100,6 @@ p{
     font-family: var(--texto);
     color: var(--cinza);
 }
-
-button{}
 
 header{
     width: 100%;  
@@ -132,10 +148,37 @@ nav{
     flex-direction: row;
     justify-content: space-around;
 }
+/*switch*/
 #switch{
-    background-color: blue;
-    height: 30px;
-    width: 100px;
+    position: relative;
+    width: 64px;
+}
+
+#switch button{
+    background-color: var(--cinza);
+    height: 32px;
+    width: 32px;
+    border: 0;
+    border-radius: 50%;
+    background-image: var(--switch-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
 }
 
 #cabecalho-botoes > a:hover{ 
@@ -287,7 +330,7 @@ span{
 .caixa-projetos img{
     max-width: 100%;
     width: 400px;
-    border: 0;
+    border: 1px solid var(--preto);
     border-radius: 5px;
 }
 
@@ -309,10 +352,6 @@ span{
     align-items: start;
 }
 
-.bordas{    
-    
-}
-
 .tecnologia-projetos{
     display: flex;
     flex-direction: row;
@@ -322,9 +361,8 @@ span{
     padding: 5px;
     border-radius: 8px;
     font-size: 8pt;
-    background-color: var(--cinza);
     margin: 5px;
-    color: gray;
+    color: var(--cinza-escuro);
 }
 
 .imagem-projetos{
@@ -341,10 +379,11 @@ span{
 .botao-projetos a{
     font-size: 11pt;
     margin-left: 10px;
-    border: 1px solid;
-    border-color: var(--cinza);
+    background-color: var(--amarelo);
+    color: var(--preto);
     border-radius: 8px;   
 }
+/*.botao-projetos a:hover{}*/
 
 /* CONTAINER FOOTER */
 

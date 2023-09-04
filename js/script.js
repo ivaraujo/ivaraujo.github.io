@@ -15,3 +15,18 @@ function ocultar(){
         btnTop.style.display = "none";
     }
 }
+
+//Toggle Mode
+
+function toggleMode(){
+    const html = document.documentElement;
+
+    html.classList.toggle('light');
+
+    if(html.classList.contains('light')){
+        
+    }
+    else{
+        
+    }
+}
