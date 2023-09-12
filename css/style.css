@@ -135,8 +135,9 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    height: 70px;
+    justify-content: space-around;
+    height: 70px;    
+    width: 100%;
 }
 
 #container-logo{    
@@ -144,7 +145,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 #menu{
