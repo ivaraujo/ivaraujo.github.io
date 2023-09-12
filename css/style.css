@@ -102,7 +102,13 @@ p{
 }
 
 header{
-    width: 100%;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 24px;
+    background-color: yellow;  
 }
 
 main{
@@ -135,32 +141,42 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
+    gap: 50px;
     width: 100%;
     max-width: 1200px;
     padding: 15px;
     margin: 0 auto;
+    background-color: green;
+}
+
+#container-menu{
+    width: 100%;
+    background-color: red;
 }
 
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
+    background-color: aqua;
 }
 
 #botoesMenu{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 #botoesMenu a{
     display: block;    
-    border: 1px transparent;
+    border: 1px solid transparent;
 }
 
 #botoesMenu a:hover{ 
     border-bottom: 1px solid var(--amarelo);
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 #menu{
@@ -220,9 +236,6 @@ nav{
     font-size: 2em;
 }
 
-#legenda{    
-}
-
 #legenda-texto{
     display: flex;
     flex-direction: column;
@@ -233,6 +246,14 @@ nav{
 
 span{    
     color: var(--amarelo);
+}
+
+#redes-sociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+    width: 100%;
 }
 
 #imagem-titulo{
@@ -292,12 +313,12 @@ span{
     flex-direction: row;
 }
 
-#icons-skills > div{
+#icons-skills div{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
 }
 
-#icons-skills > div > a > img{
+#icons-skills  div  a  img{
     max-width: 60px;
     padding: 10px;
     border-radius: 15px;
@@ -400,7 +421,6 @@ span{
     color: var(--preto);
     border-radius: 8px;   
 }
-/*.botao-projetos a:hover{}*/
 
 /* CONTAINER FOOTER */
 

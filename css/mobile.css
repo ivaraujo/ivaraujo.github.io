@@ -1,11 +1,18 @@
 
 @media screen and (max-width: 780px){
-    #container-header{        
+    header{
         flex-direction: column;
+    }
+
+    #container-header{
+        width: 100%;
+    }
+
+    #container-menu{
+        
     }
     
     nav{
-        width: 100%;
         flex-direction: column;
     }
 
