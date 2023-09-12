@@ -102,13 +102,7 @@ p{
 }
 
 header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
-    padding: 0px 24px;
-    background-color: yellow;  
 }
 
 main{
@@ -137,55 +131,42 @@ footer{
 
 /* CONTAINER HEADER */
 
-#container-header{    
+#container-header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
+    height: 70px;
+}
+
+#container-logo{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 50px;
-    width: 100%;
-    max-width: 1200px;
-    padding: 15px;
-    margin: 0 auto;
-    background-color: green;
 }
 
-#container-menu{
-    width: 100%;
-    background-color: red;
-}
-
-nav{
+#menu{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    background-color: aqua;
 }
 
-#botoesMenu{
-    display: flex;
-    align-items: center;
-    width: 100%;
+#menu a{ 
+    display: block; 
+    border-bottom: 1px solid transparent;
 }
 
-#botoesMenu a{
-    display: block;    
-    border: 1px solid transparent;
-}
-
-#botoesMenu a:hover{ 
+#menu a:hover{ 
     border-bottom: 1px solid var(--amarelo);
     border-radius: 10px;    
 }
 
-#menu{
+#btn-mobile{
     display: none;
-    text-align: center;
-    background-color:var(--cinza-escuro);
 }
 
 /*switch*/
+
 #switch{
     position: relative;
     width: 64px;

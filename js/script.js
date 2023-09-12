@@ -27,11 +27,12 @@ function toggleMode(){
 
 //Menu
 
+const btnMobile = document.getElementById('btn-mobile');
+
+
 function clickMenu(){
-    if(botoesMenu.style.display == 'block'){
-        botoesMenu.style.display = 'none';
-    }
-    else{
-        botoesMenu.style.display = 'block';
-    }
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
 }
+
+btnMobile.addEventListener('click', clickMenu);

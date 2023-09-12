@@ -1,39 +1,35 @@
 
 @media screen and (max-width: 780px){
-    header{
-        flex-direction: column;
+
+    /* HEADER */
+
+    #menu{
+       display: none;
+       position: absolute;
+       width: 100%;
+       top: 90px;
+       right: 0px;
+       background-color: var(--cinza-escuro);
     }
 
-    #container-header{
-        width: 100%;
+    #menu a{
+        border-bottom:1px solid var(--cinza);
     }
 
-    #container-menu{
-        
-    }
-    
-    nav{
-        flex-direction: column;
-    }
-
-    #botoesMenu {
-        display: none;
-        text-align: center;
-    }
-
-    #botoesMenu a{
-        border:0;
-    }
-
-    #botoesMenu a:hover{
-        border: none;
+    #menu a:hover{
         border-radius: none;
     }
 
+    #nav.active #menu{
+        display: block;
+        text-align: center;
+   }
     
-    #menu{
+    #btn-mobile{
        display: block;
     } 
+
+        /* MAIN */
 
     section{
         width: 100%;
