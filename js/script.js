@@ -7,8 +7,7 @@ btnTop.addEventListener("click", function(){
 
 document.addEventListener("scroll", ocultar);
 
-function ocultar(){
-    window.scrollY == 0;
+function ocultar(){    
     if(window.scrollY > 150){
         btnTop.style.display = "flex";
     }

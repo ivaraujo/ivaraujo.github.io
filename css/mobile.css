@@ -3,13 +3,25 @@
 
     /* HEADER */
 
+    #container-header{
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
     #menu{
-       display: none;
+       display: block;
        position: absolute;
        width: 100%;
+       height: 0px;
+       z-index: 10000;
+       transition: .6s;
        top: 90px;
        right: 0px;
        background-color: var(--cinza-escuro);
+       visibility: hidden;
+       overflow-y: hidden;
+       text-align: center;
     }
 
     #menu a{
@@ -17,18 +29,61 @@
     }
 
     #menu a:hover{
-        border-radius: none;
+        border-radius: 0px;
+        border-bottom:1px solid transparent;
+        background-color: var(--cinza);
+        overflow-y: auto;
     }
 
     #nav.active #menu{
-        display: block;
-        text-align: center;
+        height: calc(100vh - 90px);
+        visibility: visible;
    }
     
     #btn-mobile{
-       display: block;
-    } 
+       display: flex;
+       align-items: center;
+       padding: .5rem 1rem;
+       cursor: pointer;
+       background:none;
+       border: none;
+       font-size: 1rem;
+       color: var(--cinza-escuro);
+       gap: 10px;
+    }
+    
+    #hamburger{        
+        width: 30px;
+        border-top: 2px solid;
+        color: var(--cinza-escuro);
+    }
 
+    #hamburger::after, #hamburger::before{
+        display: block;
+        content: '';
+        width: 30px;
+        height: 2px;
+        margin-top: 8px;
+        background-color: currentColor;
+    }
+
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #switch{        
+        width: 44px;
+    }
+
+    #switch button{
+        height: 22px;
+        width: 22px;
+    }
+
+    #switch span{
+        width: 44px;
+        height: 14px;
+    }
         /* MAIN */
 
     section{
