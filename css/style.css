@@ -290,6 +290,11 @@ span{
     justify-content: center;
     align-items: start;
     width: 100%;
+    gap: 10px;
+}
+
+.descricao-sobre strong{
+    color: var(--amarelo);
 }
 
 .descricao-sobre h2{
