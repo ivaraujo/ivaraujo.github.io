@@ -116,7 +116,9 @@
         <form action="" method="get">
             <label for="valor">Valor da tarifa:</label>
             <input type="number" id="valor" name="valor" step="0.01" min="1" placeholder="0,00" required>
-            <label for="dias">Dias:</label>
+            <label for="viagens">Qtd. de Viagens:</label>
+            <input type="number" id="viagens" name="viagens" step="0.01" min="1" value="2" placeholder="Digite o número de viagens" required>
+            <label for="dias">Qtd. de Dias:</label>
             <input type="number" id="dias" name="dias" step="0.01" min="1" value="23" placeholder="Digite o número de dias" required>
             <button type="submit">Calcular</button>
         </form>
@@ -131,15 +133,16 @@
     document.querySelector('form').addEventListener('submit', function(e) {
         e.preventDefault();
         const valor = parseFloat(document.getElementById('valor').value);
+        const viagens = parseInt(document.getElementById('viagens').value);
         const dias = parseInt(document.getElementById('dias').value);
         const resultado = document.getElementById('resultado');
-        
-        if (isNaN(valor) || isNaN(dias)) {
+
+        if (isNaN(valor) || isNaN(viagens) || isNaN(dias)) {
             resultado.textContent = 'Por favor, insira valores válidos.';
             return;
         }
 
-        const total = valor * dias;
+        const total = valor * viagens * dias;
         resultado.textContent = `R$ ${total.toFixed(2)}`;
     });
 </script>
